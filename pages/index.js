@@ -36,14 +36,7 @@ export default function Home({mainSection}) {
           {title}
         </h1>
 
-        <div>
-          <Image 
-            src={`https:${url}`}
-            width={width}
-            height={height}
-            alt='city'
-          />
-        </div>
+
 
         <p className={styles.description}>
           Development in process..
