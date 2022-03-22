@@ -1,8 +1,28 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { createClient } from 'contentful'
 
-export default function Home() {
+
+export default function Home({mainSection}) {
+
+  const { 
+    title,
+    backgroundImage: {
+      fields: {
+        file: {
+          url,
+          details: {
+            image: {
+              height,
+              width
+            }
+          }
+        }
+      }
+    }
+  } = mainSection[0].fields
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,8 +33,17 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          VENCOACH SITE
+          {title}
         </h1>
+
+        <div>
+          <Image 
+            src={`https:${url}`}
+            width={width}
+            height={height}
+            alt='city'
+          />
+        </div>
 
         <p className={styles.description}>
           Development in process..
@@ -28,4 +57,21 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getStaticProps() {
+
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken:process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
+  })
+
+  const resp = await client.getEntries({content_type: 'mainSection' })
+
+  return {
+    props: {
+      mainSection: resp.items
+    }
+  }
+
 }
