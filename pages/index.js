@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { createClient } from 'contentful'
 
@@ -31,23 +30,7 @@ export default function Home({mainSection}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
-
-
-
-        <p className={styles.description}>
-          Development in process..
-        </p>
-
-        
-      </main>
-
-      <footer className={styles.footer}>
-        copyright &copy; VENCOACH 2022
-      </footer>
+      
     </div>
   )
 }
