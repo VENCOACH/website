@@ -1,12 +1,18 @@
+@import './_var'
+
+
 html
 body 
   padding: 0
   margin: 0
 
+  border: solid 2px purple
+  @media only screen and (min-width: $ultra-wide)
+    max-width: $ultra-wide
+    display: block
+    margin: auto
 a 
   color: inherit
   text-decoration: none
-
-
 * 
   box-sizing: border-box
