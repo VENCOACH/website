@@ -1,0 +1,31 @@
+@import '../../sass/_var'
+    
+.backgroundImg
+    position: relative
+    height: 929px
+    width: 100vw
+    overflow-x: hidden
+    z-index: -1
+    filter: opacity(75%)
+    @media only screen and (min-width: $ultra-wide)
+        max-width: $ultra-wide
+    @media only screen and (max-width: $mobile-lg)
+        height: 500px
+        
+.contentBox 
+    position: relative
+    width: 90vw
+    max-width: 1300px
+    height: 929px
+    display: block
+    margin: auto
+    @media only screen and (max-width: $laptop-lg)
+        max-width: 960px
+    @media only screen and (max-width: $md)
+        max-width: 720px
+    @media only screen and (max-width: $tablet)
+        max-width: 560px
+    @media only screen and (max-width: $tablet-sm)
+        max-width: 430px
+    @media only screen and (max-width: $mobile-lg)
+        max-width: 100vw
