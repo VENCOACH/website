@@ -17,7 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Section 
+      <Section
+        name='main' 
         height="929px"
         bgimg={true} 
         src={cityBackground}
