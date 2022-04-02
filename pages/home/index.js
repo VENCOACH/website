@@ -10,9 +10,6 @@ export default function Home({rawContent}) {
 
   const orderContent = Organizer.order(rawContent);
 
-
-  // const entrySectionNames = orderContent.map(each=>each.fields.entryTitle);
-
   return (
     <div className={container}>
       

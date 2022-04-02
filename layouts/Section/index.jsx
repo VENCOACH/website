@@ -45,5 +45,3 @@ export default function Section({ sectionData }) {
       </section>
   )
 }
-
-//todo: limpiar todo esto. 
