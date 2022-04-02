@@ -20,7 +20,7 @@ export default function Home({rawContent}) {
       </Head>
 
       {orderContent.map((each)=>{
-        return <Section sectionData={each}/>
+        return <Section key={each.fields.entryTitle} sectionData={each}/>
       })}
 
     </div>
