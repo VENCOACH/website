@@ -1,29 +1,32 @@
 import Head from 'next/head';
 import styles from './Home.module.sass';
 import Section from '../../layouts/Section';
-import cityBackground from '../../public/img/cityBackground.png';
+import Organizer from '../../utils/Organizer';
 
 
-
-export default function Home() {
+export default function Home({rawContent}) {
 
   const { container } = styles
 
+  const orderContent = Organizer.order(rawContent);
+
+
+  // const entrySectionNames = orderContent.map(each=>each.fields.entryTitle);
+
   return (
     <div className={container}>
+      
       <Head>
         <title>Vencoach</title>
         <meta name="Vencoach" content="Coaching profesional" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Section
-        name='main' 
-        height="929px"
-        bgimg={true} 
-        src={cityBackground}
-      />
+      {orderContent.map((each)=>{
+        return <Section sectionData={each}/>
+      })}
 
     </div>
   )
 }
+
