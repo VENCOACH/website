@@ -1,0 +1,44 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+// Generals for all sections: 
+    
+.backgroundImg {
+    position: relative;
+    overflow-x: hidden;
+    z-index: -1;
+    filter: opacity(100%);
+    width: 100vw;
+    @include ultraWideScreen {
+        max-width: 2560px;
+    }
+    @include mobile{
+        height: 500px !important;
+    }
+        // Must have "important", otherwise the inline style height pass as prop, would override this media query
+}     
+.contentBox {
+    position: relative;
+    width: 90vw;
+    max-width: 1300px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    @include laptop-lg {
+        max-width: 960px
+    }
+    @include laptop-sm {
+        max-width: 720px
+    }
+    @include tablet {
+        max-width: 560px
+    }
+    @include tablet-sm {
+        max-width: 430px
+    }
+    @include mobile {
+        width: 100vw
+    }
+}
+
+// Particular for each sections: 

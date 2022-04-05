@@ -1,4 +1,4 @@
-import '../sass/globals.sass'
+import '../sass/index.sass'
 import WrapperLayout from '../layouts/WrapperLayout';
 
 function MyApp({ Component, pageProps }) {

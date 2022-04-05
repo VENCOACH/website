@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import style from './section.module.sass';
+import style from './section.module.scss';
 import ContentSlot from '../../utils/ContentSlot';
 
 export default function Section({ sectionData }) {

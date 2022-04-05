@@ -1,0 +1,52 @@
+
+$breakpoints: (
+    "cero": 0,
+    "mobile": 430px,
+    "tablet-sm": 570px,
+    "tablet": 770px,
+    "laptop-sm": 990px,
+    "laptop-lg": 1440px,
+    "wideScreen": 1920px,
+    "ultraWideScreen": 2560px 
+);
+
+@mixin cero {
+    @media (max-width: map-get($breakpoints, 'cero'))  {
+        @content
+    }
+};
+@mixin mobile {
+    @media (max-width: map-get($breakpoints, 'mobile'))  {
+        @content
+    }
+};
+@mixin tablet-sm {
+    @media (max-width: map-get($breakpoints, 'tablet-sm'))  {
+        @content
+    }
+};
+@mixin tablet {
+    @media (max-width: map-get($breakpoints, 'tablet'))  {
+        @content
+    }
+};
+@mixin laptop-sm {
+    @media (max-width: map-get($breakpoints, 'laptop-sm'))  {
+        @content
+    }
+};
+@mixin laptop-lg {
+    @media (max-width: map-get($breakpoints, 'laptop-lg'))  {
+        @content
+    }
+};
+@mixin wideScreen {
+    @media (max-width: map-get($breakpoints, 'wideScreen'))  {
+        @content
+    }
+};
+@mixin ultraWideScreen {
+    @media (min-width: map-get($breakpoints, 'ultraWideScreen'))  {
+        @content
+    }
+};

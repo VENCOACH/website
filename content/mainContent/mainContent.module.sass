@@ -1,0 +1,29 @@
+@import '../../sass/_var' 
+@import '../../sass/_breakpoints'
+
+.grid
+    height: 100%
+    display: grid 
+    grid-template-columns: repeat(12,1fr)
+    grid-template-rows: repeat(6,1fr)
+    overflow: hidden
+    h1
+        font-family: $dm-sans
+        font-size: 60px
+        color: $blue
+        margin-top: 1em
+        grid-column: 1 / 8
+        grid-row: 1/ 6
+        @include laptop-lg
+            font-size: 50px
+
+    span
+        color: $orange
+
+    img 
+        max-height: 700px
+        grid-row: 2/6 
+        grid-column: 7/12
+        @include laptop-lg
+            max-height: 500px
+            grid-row: 3/6

@@ -9,7 +9,7 @@ export default class ContentSlot {
             case 'a-mainSectionLayout':
                 return <MainContent sectionContentData={sectionContentData}/>
             case 'b-AboutSectionLayout':
-                return <MainContent sectionContentData={sectionContentData}/>
+                return <div></div>
             default: 
                 throw new Error(` 📛 THE COMPONENT "${contentId}" DOES NOT EXIST, PLEASE CHECK 😓`); 
         }
