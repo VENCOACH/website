@@ -30,4 +30,12 @@
             grid-row: 3/6;
         }
     }
+    p {
+        grid-column: 1/4;
+        grid-row: 4;
+        font-size: 1.25rem;
+        font-family: $nunito;
+        font-weight: $semibold;
+        transform: translateY(-2em);
+    }
 }

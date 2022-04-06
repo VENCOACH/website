@@ -10,10 +10,10 @@ export default function MainContent() {
           SOMOS PROFESIONALES EN <span>COACHING</span> PERSONAL Y EMPRESARIAL
         </h1>
         <img src="img/people-hero.png" alt="people" />
-        {/* <p>
+        <p>
           Mas de 20 años trabajando de la mano de grandes profesionales, al
           servicio de una mejor gestión.
-        </p> */}
+        </p>
       </div>
     );
 }
