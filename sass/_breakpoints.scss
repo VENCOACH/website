@@ -3,6 +3,7 @@ $breakpoints: (
     "cero": 0,
     "mobile": 430px,
     "tablet-sm": 570px,
+    "tablet-md": 620px,
     "tablet": 770px,
     "laptop-sm": 990px,
     "laptop-lg": 1440px,
@@ -22,6 +23,11 @@ $breakpoints: (
 };
 @mixin tablet-sm {
     @media (max-width: map-get($breakpoints, 'tablet-sm'))  {
+        @content
+    }
+};
+@mixin tablet-md {
+    @media (max-width: map-get($breakpoints, 'tablet-md'))  {
         @content
     }
 };

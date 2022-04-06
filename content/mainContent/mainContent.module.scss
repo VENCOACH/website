@@ -1,12 +1,13 @@
 @import '../../sass/_var';
 @import '../../sass/_breakpoints';
 
-.grid {
+.container {
     height: 100%;
     display: grid; 
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(6,1fr);
     overflow: hidden;
+    z-index: -1;
     h1 {
         font-family: $dm-sans;
         font-size: 60px;
@@ -15,19 +16,107 @@
         grid-column: 1 / 8;
         grid-row: 1/ 6;
         @include laptop-lg {
-            font-size: 50px
+            font-size: 50px;
+            grid-column: 1 / 11;
+        }
+        @include laptop-sm {
+            font-size: 45px;
+        }
+        @include tablet {
+            grid-column: 1/13;
+            
+        }
+        @include tablet-sm {
+            font-size: 35px;
+        }
+        @include mobile {
+            font-size: 25px;
+            text-align:center;
         }
     }
     span {
         color: $orange;
     }
-    img {
-        max-height: 700px;
-        grid-row: 2/6 ;
+    .woman_white {
+        grid-row: 1/6 ;
+        max-height: 560px;
+        transform: translateY(9em);
         grid-column: 7/12;
         @include laptop-lg {
-            max-height: 500px;
+            max-height: 478px;
+            transform: translate(0px, 230px);
+            grid-column: 6/12;
+        }
+        @include laptop-sm {
+            max-height: 403px;
+            transform: translate(-25px,297px);
+            grid-column: 5/12;
+        }
+        @include tablet {
+            max-height: 352px;
+            transform: translate(-32px,348px);
+        }
+        @include tablet-sm {
+            max-height: 314px;
+            transform: translate(15px,386px);
+            grid-column: 3/12;
+        }
+        @include mobile {
+            max-height: 256px;
+            transform: translate(4px,245px);
+            grid-column: 1/12;
+        }
+
+    }
+    .woman_gray {
+        grid-row: 1/6 ;
+        max-height: 650px;
+        transform: translateY(9em);
+        grid-column: 8/12;
+        @include laptop-lg {
+            max-height: 540px;
+            transform: translate(-20px,211px);
+        }
+        @include laptop-sm {
+            max-height: 472px;
+            transform: translate(-5px,14.8em);
+            grid-column: 7/12;
+        }
+        @include tablet {
+            max-height: 405px;
+            transform: translate(-23px,307px);
+        }
+        @include tablet-sm {
+            max-height: 350px;
+            transform: translate(28px, 398px);
+            grid-column: 5/12;
+        }
+        @include mobile {
+            max-height: 281px;
+            transform: translate(37px, 260px);
+            grid-column: 5/12;
+        }
+    }
+    .deco_moon {
+        max-height: 602px;
+        mix-blend-mode: multiply;
+        grid-row: 2/6 ;
+        grid-column: 6/12;
+        @include laptop-lg {
+            grid-column: 5/12;
+        }
+        @include laptop-sm {
+            grid-column: 4/12;
+        }
+        @include tablet {
+            grid-column: 2/12;
             grid-row: 3/6;
+        }
+        @include mobile {
+            grid-column: 2/12;
+            grid-row: 3/6;
+            transform: rotate(46deg);
+            transform: translate(-164px, 104px) rotate(6deg);
         }
     }
     p {
@@ -37,5 +126,64 @@
         font-family: $nunito;
         font-weight: $semibold;
         transform: translateY(-2em);
+        @include laptop-lg {
+            transform: translateY(-4em);
+            font-size: 1.1rem;
+            grid-column: 1/5;
+        }
+        @include laptop-sm {
+            grid-column: 1/6;
+        }
+        @include tablet {
+            grid-row: 3;
+            transform: translateY(1em);
+        }
+        @include tablet-md {
+            transform: translateY(3em);
+        }
+        @include tablet-sm {
+            grid-column: 1/10;
+            transform: translateY(1em);
+        }
+        @include mobile {
+            font-size: 0.9rem;
+            text-align: center;
+            grid-column: 1/13;
+            transform: translateY(-2em);
+            margin: 20px;
+        }
+    }
+    .btnPrimary {
+        z-index: 10;
+        grid-column: 1/4;
+        grid-row: 5;
+        width: 215px;
+        height: 54px;
+        color: $white;
+        background-color: $yellow;
+        border-radius: 1em;
+        font-family: $nunito;
+        font-weight: $semibold;
+        font-size: 1.2rem;
+        border:none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover{
+            background-color: $blue;
+        }
+        @include tablet {
+            width: 150px;
+        }
+        @include tablet-sm {
+            width: 120px;
+            transform: translateY(-3em);
+        }
+        @include mobile {
+            margin: auto;
+            height: 35px;
+            font-size: 1rem;
+            grid-column: 1/12;
+            transform: translate(13px,-7.8em);
+        }
     }
 }

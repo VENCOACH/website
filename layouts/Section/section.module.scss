@@ -6,7 +6,6 @@
 .backgroundImg {
     position: relative;
     overflow-x: hidden;
-    z-index: -1;
     filter: opacity(100%);
     width: 100vw;
     @include ultraWideScreen {
