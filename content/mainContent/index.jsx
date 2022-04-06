@@ -1,4 +1,4 @@
-import styles from './mainContent.module.sass';
+import styles from './mainContent.module.scss';
 
 export default function MainContent() {
     
