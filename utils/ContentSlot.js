@@ -1,4 +1,4 @@
-import MainContent from "../content/mainContent";
+import MainContent from "../components/mainContent";
 
 export default class ContentSlot {
 
