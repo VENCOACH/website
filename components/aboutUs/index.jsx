@@ -1,4 +1,5 @@
 import styles from './aboutUs.module.scss';
+import InfoBlock from '../infoBlock';
 
 
 export default function AboutUs({sectionContentData}) {
@@ -10,7 +11,7 @@ export default function AboutUs({sectionContentData}) {
   return (
     <div className={container}>
         <aside className={rightAside}>
-            
+          <InfoBlock/>    
         </aside>
         <aside className={leftAside}>
             

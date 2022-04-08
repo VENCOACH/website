@@ -6,3 +6,8 @@
     overflow: hidden;
     z-index: -1;
 }
+
+.rightAside {
+    grid-column: 7/13;
+    grid-row: 1/4;
+}
