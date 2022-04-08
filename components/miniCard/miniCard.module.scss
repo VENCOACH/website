@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+}
+
+.leftSide {
+    place-self: center;
+}
+
+.rightSide {
+    margin-left: 10px;
+    max-width: 425px;
+    p, h4 {
+        margin:0px
+    }
+
+    h4 {
+        margin-bottom: 5px;
+    }
+}

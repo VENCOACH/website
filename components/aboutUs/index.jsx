@@ -1,5 +1,6 @@
 import styles from './aboutUs.module.scss';
 import InfoBlock from '../infoBlock';
+import MiniCard from '../miniCard';
 
 
 export default function AboutUs({sectionContentData}) {
@@ -11,7 +12,10 @@ export default function AboutUs({sectionContentData}) {
   return (
     <div className={container}>
         <aside className={rightAside}>
-          <InfoBlock/>    
+          <InfoBlock/>  
+          <MiniCard/>  
+          <img src="img/separator.png" alt="" />
+          <MiniCard/>
         </aside>
         <aside className={leftAside}>
             
