@@ -1,9 +1,9 @@
-import styles from './AboutUs.module.scss';
+import styles from './aboutUs.module.scss';
 
 
 export default function AboutUs({sectionContentData}) {
 
-  console.log(sectionContentData);
+  // console.log(sectionContentData);
 
   const { container, rightAside, leftAside } = styles;
 
