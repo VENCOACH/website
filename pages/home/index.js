@@ -2,14 +2,19 @@ import Head from 'next/head';
 import styles from './Home.module.sass';
 import Section from '../../layouts/Section';
 import Organizer from '../../utils/Organizer';
+import { useEffect, useState } from 'react';
 
 
 export default function Home({rawContent}) {
 
   const { container } = styles
 
-  const orderContent = Organizer.order(rawContent);
+  const [orderContent, setOrderContent] = useState([]);
 
+  useEffect(() => {
+    setOrderContent(Organizer.order(rawContent));
+  }, [rawContent])
+  
   return (
     <div className={container}>
       
@@ -19,7 +24,7 @@ export default function Home({rawContent}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {orderContent.map((each)=>{
+      {orderContent && orderContent.map((each)=>{
         return <Section key={each.fields.entryTitle} sectionData={each}/>
       })}
 
