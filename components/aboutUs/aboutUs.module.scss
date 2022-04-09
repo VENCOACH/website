@@ -5,9 +5,27 @@
     grid-template-rows: repeat(6,1fr);
     overflow: hidden;
     z-index: -1;
+    padding-top: 120px;
 }
 
 .rightAside {
     grid-column: 7/13;
     grid-row: 1/4;
+}
+
+.leftAside {
+    grid-row: 1/6;
+    grid-column: 1/7;
+}
+
+.image01{
+    position: relative;
+    width:360px;
+    height: 242px;
+}
+
+.image02{
+    position: relative;
+    width:360px;
+    height: 242px;
 }
