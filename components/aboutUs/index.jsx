@@ -40,7 +40,7 @@ export default function AboutUs({sectionContentData}) {
           <InfoBlock titleText={title} subtitleText={subtitle} paragraphText={paragraph}/>  
           <MiniCard cardTitle={cardTitle01} cardParagraph={cardParagraph01} imgSrc={"img/Icon Innovation.png"} />  
           <img src="img/separator.png" alt="" className={decoLine}/>
-          <MiniCard cardTitle={cardTitle02} cardParagraph={cardParagraph02} imgSrc={"img/Icon Target.png"} />
+          <MiniCard cardTitle={cardTitle02} cardParagraph={cardParagraph02} imgSrc={"img/Icon-target.png"} />
         </aside>
         <aside className={leftAside}>
           <img src='img/decorative-circle.png' alt='' className={circle}/>
