@@ -1,6 +1,6 @@
 import styles from './infoBlock.module.scss';
 
-export default function infoBlock() {
+export default function infoBlock({titleText, subtitleText, paragraphText}) {
 
   const {container, subtitle, title, paragraph} = styles;
 
@@ -8,10 +8,10 @@ export default function infoBlock() {
     <div className={container}>
         <div className={subtitle}>
           <img src="img/vineta.png" alt="" />
-          <h3> ACERCA DE VENCOACH </h3>
+          <h3> {subtitleText} </h3>
         </div>
-        <h2 className={title}>PIONEROS EN EL COACHING EMPRESARIAL</h2>
-        <p className={paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec venenatis justo. Sed varius molestie tellus, et volutpat enim ullamcorper non. Integer rutrum pharetra posuere. Nam non luctus erat. Mauris a rutrum nisl. Nam finibus urna ac facilisis lentesque. Praesent nec quam enim. In at erat lectus. Proin pellentesque hendrerit tempor. Fusce rhoncus tempus malesuada. </p>
+        <h2 className={title}>{titleText}</h2>
+        <p className={paragraph}>{paragraphText}</p>
     </div>
   )
 }

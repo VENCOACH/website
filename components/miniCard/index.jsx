@@ -1,19 +1,18 @@
 import styles from './miniCard.module.scss';
 
-export default function MiniCard() {
+export default function MiniCard({cardTitle, cardParagraph, imgSrc}) {
 
   const {container, rightSide, leftSide} = styles;
 
   return (
     <div className={container}>
       <div className={leftSide}>
-        <img src="img/Icon Innovation.png" alt="Innovation Icon" />
+        <img src={imgSrc} alt="" />
       </div>
       <div className={rightSide}>
-        <h4>Siempre Innovando</h4>
+        <h4>{cardTitle}</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
-          venenatis justo. Sed varius molestie tellus, et volutpat enim
+          {cardParagraph}
         </p>
       </div>
     </div>
