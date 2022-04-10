@@ -1,6 +1,9 @@
+@import '../../sass/var';
+
 .container {
     height: 272px;
     width: 515px;
+    margin-bottom: 5em;
 }
 
 .subtitle {
@@ -12,5 +15,21 @@
     }
     h3 {
         margin-left: 1em;
+        font-family: $sansation;
+        color: $orange;
     }
+}
+
+.title {
+    margin: 1em 0px 1.5em 0px;
+    font-family: $sansation;
+    color: $blue;
+    font-size: 2rem;
+}
+
+.paragraph {
+    margin-bottom: 2em;
+    color: $gray;
+    font-family: $public-sans;
+    font-size: 0.9rem;
 }

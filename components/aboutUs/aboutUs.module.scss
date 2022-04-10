@@ -11,6 +11,7 @@
 .rightAside {
     grid-column: 7/13;
     grid-row: 1/4;
+    transform: translate(0px, 39px);
 }
 
 .leftAside {
@@ -20,12 +21,29 @@
 
 .image01{
     position: relative;
-    width:360px;
+    width: 360px;
     height: 242px;
+    border: solid white 7px;
+    border-radius: 12px;
+    transform: translate(222px, -31px);
 }
 
 .image02{
     position: relative;
-    width:360px;
-    height: 242px;
+    width: 436px;
+    height: 287px;
+    transform: translate(71px, 10px);
 }
+
+.circle {
+    transform: translate(0px, 67px);
+}
+
+.experience {
+    transform: translate(0px, -265px);
+}
+
+.decoLine {
+    margin: 2em 0px;
+}
+

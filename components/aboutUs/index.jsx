@@ -25,18 +25,18 @@ export default function AboutUs({sectionContentData}) {
     }
   } = sectionContentData.fields
 
-  const { container, rightAside, leftAside, image01, image02 } = styles;
+  const { container, rightAside, leftAside, image01, image02, circle, experience, decoLine } = styles;
 
   return (
     <div className={container}>
         <aside className={rightAside}>
           <InfoBlock/>  
           <MiniCard/>  
-          <img src="img/separator.png" alt="" />
+          <img src="img/separator.png" alt="" className={decoLine}/>
           <MiniCard/>
         </aside>
         <aside className={leftAside}>
-          <img src='img/decorative-circle.png' alt=''/>
+          <img src='img/decorative-circle.png' alt='' className={circle}/>
           <div className={image02}>
               <Image
                   src={`https:${url2}`}
@@ -53,7 +53,7 @@ export default function AboutUs({sectionContentData}) {
                 quality={100}
             />
           </div>
-          <img src="img/card-experiencie-number.png" alt="years of experience" />
+          <img src="img/card-experiencie-number.png" alt="years of experience" className={experience} />
         </aside>
     </div>
   )
