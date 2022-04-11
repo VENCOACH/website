@@ -1,4 +1,5 @@
 @import '../../sass/var';
+@import '../../sass/breakpoints';
 
 .container {
     display: flex;
@@ -21,6 +22,16 @@
     p {
         font-family: $public-sans;
         font-size: 0.8rem;
+        @include laptop-lg {
+            max-width: 273px;
+        }
+        @include laptop-sm {
+            font-size: 10px;
+            max-width: 228px;
+        }
+        @include mobile {
+            max-width: 234px;
+        }
     }
 
     h4 {

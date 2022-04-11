@@ -1,3 +1,6 @@
+@import '../../sass/breakpoints';
+
+
 .container {
     height: 100%;
     display: grid; 
@@ -5,13 +8,36 @@
     grid-template-rows: repeat(6,1fr);
     overflow: hidden;
     z-index: -1;
-    padding-top: 120px;
+    padding-top: 100px;
+    @include laptop-sm {
+        padding-top: 65px;
+    }
+    @include tablet {
+        display: block;
+        padding-top: 40px;
+    }
 }
 
 .rightAside {
     grid-column: 7/13;
     grid-row: 1/4;
     transform: translate(0px, 39px);
+    @include laptop-lg {
+        transform: translate(96px, 39px);
+    }
+    @include laptop-sm {
+        transform: translate(42px, 39px);
+    }
+    @include tablet-sm {
+        transform: translate(4px, 39px);
+    }
+    @include mobile {
+        transform: translate(0px, 39px);
+        margin-left: 30px;
+    }
+    @include mobile-sm {
+        transform: translate(-19px, 39px);
+    }
 }
 
 .leftAside {
@@ -26,6 +52,31 @@
     border: solid white 7px;
     border-radius: 12px;
     transform: translate(222px, -31px);
+    @include laptop-lg{
+        width: 320px;
+        height: 215px;
+    }
+    @include laptop-sm {
+        width: 256px;
+        height: 169px;
+        transform: translate(96px, 29px);
+    }
+    @include tablet {
+        width: 340px;
+        height: 228px;
+        transform: translate(107px, 29px);
+    }
+    @include tablet-sm {
+        transform: translate(43px, 29px);
+    }
+    @include mobile {
+        width: 256px;
+        height: 169px;
+        transform: translate(61px, 29px);
+    }
+    @include mobile-sm {
+        transform: translate(36px, 29px);
+    }
 }
 
 .image02{
@@ -33,6 +84,27 @@
     width: 436px;
     height: 287px;
     transform: translate(71px, 10px);
+    @include laptop-sm{
+        width: 300px;
+        height: 197.47px;
+    }
+    @include tablet {
+        width: 418px;
+        height: 275.14px;
+    }
+    @include tablet-sm {
+        width: 330px;
+        height: 217.2px;
+        transform: translate(44px, 10px);
+    }
+    @include mobile {
+        transform: translate(37px, 10px);
+    }
+    @include mobile-sm {
+        width: 300px;
+        height: 197.45px;
+        transform: translate(9px, 10px);
+    }
 }
 
 .circle {
@@ -41,9 +113,12 @@
 
 .experience {
     transform: translate(0px, -265px);
+    @include laptop-sm{
+        width: 158px;
+        transform: translate(0px, -16px);
+    }
 }
 
 .decoLine {
     margin: 2em 0px;
 }
-

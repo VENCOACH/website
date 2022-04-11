@@ -11,10 +11,6 @@
     @include ultraWideScreen {
         max-width: 2560px;
     }
-    @include mobile{
-        height: 500px !important;
-    }
-        // Must have "important", otherwise the inline style height pass as prop, would override this media query
 }     
 .contentBox {
     position: relative;

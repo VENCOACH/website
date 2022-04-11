@@ -1,6 +1,7 @@
 
 $breakpoints: (
     "cero": 0,
+    "mobile-sm":350px,
     "mobile": 430px,
     "tablet-sm": 570px,
     "tablet-md": 620px,
@@ -13,6 +14,11 @@ $breakpoints: (
 
 @mixin cero {
     @media (max-width: map-get($breakpoints, 'cero'))  {
+        @content
+    }
+};
+@mixin mobile-sm {
+    @media (max-width: map-get($breakpoints, 'mobile-sm'))  {
         @content
     }
 };

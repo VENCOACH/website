@@ -1,0 +1,11 @@
+@import "general";
+@import "var";
+@import "breakpoints";
+
+// Global styling
+// Have to be here because, dynamically added classes, can't coexist with module classes. 
+.a-mainSectionLayout {
+    @include mobile {
+        height: 500px !important;
+    }
+}
