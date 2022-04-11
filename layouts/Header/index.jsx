@@ -1,3 +1,4 @@
+import NavigationBar from '../../components/navigationBar';
 import style from './header.module.sass'
 
 export default function Header() {
@@ -6,7 +7,7 @@ export default function Header() {
 
   return (
     <div className={container}>
-      Este es el header
+      <NavigationBar/>
     </div>
   )
 }
