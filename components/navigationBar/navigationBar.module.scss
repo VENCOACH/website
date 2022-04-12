@@ -1,0 +1,144 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.contentBox {
+    width: 90vw;
+    max-width: 1300px;
+    display: block;
+    margin: auto;
+    @include laptop-lg {
+        max-width: 960px
+    }
+    @include laptop-sm {
+        max-width: 720px
+    }
+    @include tablet {
+        max-width: 560px
+    }
+    @include tablet-sm {
+        max-width: 430px
+    }
+    @include mobile {
+        width: 100vw
+    }
+}
+
+.upperSection {
+    background-color: $blue;
+    .contentBox{
+        display: flex;
+        position: relative;
+        height: 43px;
+        align-items: center;
+        p, address{
+            color: $white;
+        }
+        div {
+            display: flex;
+            align-items: center;
+    
+        }
+        .address{
+            img{
+                width: 27px;
+                height: 27px;
+            }
+            address {
+                font-size: 12px;
+                font-family: $nunito;
+                font-weight: $bold;
+            }
+        }
+        .phone, .email{
+            p{
+                font-size: 12px;
+                font-family: $nunito;
+                font-weight: $bold;
+                margin-left: 1em;
+            }
+        }
+        .rightSide {
+            position: absolute;
+            right: 0px;
+            div {
+                margin-left: 2em;
+            }
+            .socialIcons {
+                img {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+
+}
+
+.bottomSection {
+    background-color: $white;
+    .contentBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        figure{
+            margin: 0;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            transform: translate(-55px,0px); 
+            li {
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+                font-size: 20px;
+                font-family: $nunito;
+                font-weight: $semibold;
+                color: $blue;
+                cursor: pointer;
+                a {
+                    &:hover {
+                        color: $yellow;
+                    }
+                    &:after {    
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        left: 50%;
+                        position: absolute;
+                        background: $yellow;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                      }
+                      &:hover:after { 
+                        width: 100%; 
+                        left: 0; 
+                      }
+                }
+                
+            }
+        }
+        button{
+            width: 163px;
+            height: 41px;
+            background-color: $orange;
+            color: $white;
+            font-family: $sansation;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            box-shadow: 5px 5px 10px $gray;
+            &:hover{
+                background-color: $yellow;
+            }
+        }
+    }
+}
