@@ -19,3 +19,6 @@ export default class Organizer {
         
     }
 }
+
+// For this to work we the desorderArray must have a prefix.: [ c-element, b-element, f-elemenet, a-element] , 
+// will return [a-element, b-element, c-element, f-element]
