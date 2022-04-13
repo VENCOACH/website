@@ -91,7 +91,10 @@
         ul {
             display: flex;
             list-style-type: none;
-            transform: translate(-55px,0px); 
+            transform: translate(-55px,0px);
+            @include laptop-lg {
+                margin-left: 2em;
+            } 
             li {
                 margin-left: 1.5em;
                 margin-right: 1.5em;
@@ -100,6 +103,11 @@
                 font-weight: $semibold;
                 color: $blue;
                 cursor: pointer;
+                @include laptop-lg {
+                    font-size: 1rem;
+                    margin-left: 1em;
+                    margin-right: 1em;
+                }
                 a {
                     &:hover {
                         color: $yellow;
@@ -138,6 +146,11 @@
             box-shadow: 5px 5px 10px $gray;
             &:hover{
                 background-color: $yellow;
+            }
+            @include laptop-lg {
+                font-size: 1rem;
+                width: 124px;
+                height: 33px;
             }
         }
     }
