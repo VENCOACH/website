@@ -5,10 +5,9 @@
     height: 100%;
     display: grid; 
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(6,1fr);
     overflow: hidden;
     z-index: -1;
-    padding-top: 100px;
+    padding-top: 65px;
     @include laptop-sm {
         padding-top: 65px;
     }
