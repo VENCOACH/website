@@ -1,3 +1,5 @@
+// Cuando se accede a los breakpoints desde los diferentes modulos, debe hacerse de mayor
+// ancho (ultraWideScreen) hacia el menor (cero) , para que funcione, ya que se usa max-width. 
 
 $breakpoints: (
     "cero": 0,

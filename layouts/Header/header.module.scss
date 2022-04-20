@@ -1,0 +1,13 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+
+.container {
+    height: 120px;
+    @include tablet{
+        height: 106px;
+    }
+    @include mobile {
+        height: 88px;
+    }
+}
