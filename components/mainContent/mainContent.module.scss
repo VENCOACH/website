@@ -120,6 +120,12 @@
             transform: rotate(46deg);
             transform: translate(-164px, 104px) rotate(6deg);
         }
+        &__front {
+            height: 220px;
+            grid-row: 1/6;
+            grid-column: 9/12;
+            transform: translate(130px, 484px);
+        }
     }
     p {
         grid-column: 1/4;
