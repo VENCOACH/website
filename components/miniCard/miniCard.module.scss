@@ -21,6 +21,7 @@
 
     p {
         font-family: $public-sans;
+        font-weight: $light;
         font-size: 0.8rem;
         @include laptop-lg {
             max-width: 273px;

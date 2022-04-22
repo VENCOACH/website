@@ -57,6 +57,7 @@
         margin-bottom: 2em;
         color: $gray;
         font-family: $public-sans;
+        font-weight: $medium;
         font-size: 0.9rem;
         @include laptop-lg {
             max-width: 350px;

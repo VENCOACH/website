@@ -36,13 +36,15 @@
         position: relative;
         height: 43px;
         align-items: center;
+        font-family: $nunito;
+        font-weight: $regular;
         p, address{
             color: $white;
         }
         div {
             display: flex;
             align-items: center;
-    
+
         }
         .address{
             img{
@@ -51,15 +53,11 @@
             }
             address {
                 font-size: 12px;
-                font-family: $nunito;
-                font-weight: $bold;
             }
         }
         .phone, .email{
             p{
                 font-size: 12px;
-                font-family: $nunito;
-                font-weight: $bold;
                 margin-left: 1em;
             }
         }
@@ -94,7 +92,7 @@
             transform: translate(-55px,0px);
             @include laptop-lg {
                 margin-left: 2em;
-            } 
+            }
             li {
                 margin-left: 1.5em;
                 margin-right: 1.5em;
@@ -112,7 +110,7 @@
                     &:hover {
                         color: $yellow;
                     }
-                    &:after {    
+                    &:after {
                         background: none repeat scroll 0 0 transparent;
                         bottom: 0;
                         content: "";
@@ -124,12 +122,12 @@
                         transition: width 0.3s ease 0s, left 0.3s ease 0s;
                         width: 0;
                       }
-                      &:hover:after { 
-                        width: 100%; 
-                        left: 0; 
+                      &:hover:after {
+                        width: 100%;
+                        left: 0;
                       }
                 }
-                
+
             }
         }
         button{
