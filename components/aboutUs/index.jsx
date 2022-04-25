@@ -6,8 +6,6 @@ import Image from 'next/image';
 
 export default function AboutUs({sectionContentData}) {
 
-  console.log(sectionContentData);
-
   const {
     image01:{
       fields:{
