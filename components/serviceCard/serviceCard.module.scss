@@ -1,0 +1,39 @@
+@import '../../sass/breakpoints';
+@import '../../sass/var';
+
+.container {
+    width: 356px;
+    height: 305px;
+    box-shadow:4px 7px 18px $gray;
+    border-radius: 10px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    &:hover {
+        box-shadow: 1px 2px 8px $gray;
+    }
+    .iconImage {
+        position: relative;
+        min-width: 102px;
+        min-height: 107px;
+        margin-top: 1em;
+    }
+    h4 {
+        font-family: $sansation;
+        font-size: 22px;
+        font-weight: $regular;
+        color: $blue;
+        margin-top: 20px;
+        margin-bottom: 0.5em;
+    }
+    p {
+        font-family: $sansation;
+        font-weight: $regular;
+        font-size: 12px;
+        color: $gray;
+        text-align: center;
+        margin: 1em 1.5em 1em 1.5em;
+    }
+}
