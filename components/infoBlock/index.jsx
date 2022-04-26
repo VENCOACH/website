@@ -2,18 +2,19 @@ import styles from './infoBlock.module.scss';
 
 export default function infoBlock({titleText, subtitleText, paragraphText='', _center=false}) {
 
-  const {container, subtitle, title, paragraph, paragraphWrapper, center} = styles;
+  const {container, subtitle, title, paragraph, paragraphWrapper, centerContainer, centerSubtitle, centerTitle} = styles;
 
   return (
-    <div className={`${container} ${_center ? center : ''}`} >
-        <div className={`${subtitle} ${_center ? center : ''}`}>
+    <div className={`${container} ${_center ? centerContainer : ''}`} >
+        <div className={`${subtitle} ${_center ? centerSubtitle : ''}`}>
           <img src="img/vineta.png" alt="" />
           <h3> {subtitleText} </h3>
         </div>
-        <h2 className={title}>{titleText}</h2>
+        <h2 className={`${title} ${_center? centerTitle : ''}`}>{titleText}</h2>
+        {paragraphText && 
         <div className={paragraphWrapper}>
           <p className={paragraph}>{paragraphText}</p>
-        </div>
+        </div>}
     </div>
   )
 }

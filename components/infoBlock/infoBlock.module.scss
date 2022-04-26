@@ -10,10 +10,14 @@
     }
 }
 
-.center {
+.centerContainer {
     width: 100%;
     text-align: center;
     justify-content: center;
+    @include laptop-sm {
+        height: 22px;
+
+    }
 }
 
 .subtitle {
@@ -32,6 +36,12 @@
             font-size: 0.9rem;
         }
     }
+}
+
+.centerSubtitle {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .title {
@@ -56,6 +66,16 @@
         font-size: 1.3rem;
         max-width: 308px;
     }
+}
+
+.centerTitle {
+    @include laptop-lg {
+        max-width: 100vw;
+    }
+    @include tablet-sm {
+        font-size: 20px;
+    }
+
 }
 
 .paragraphWrapper{

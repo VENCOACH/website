@@ -11,6 +11,21 @@
     flex-direction: column;
     align-items: center;
     transition: all 0.3s ease;
+    @include laptop-sm{
+        width: 308px;
+    }
+    @include tablet {
+        width: 234px;
+        height: 336px;
+    }
+    @include tablet-sm {
+        width: 366px;
+        height: 117px;
+        flex-direction: row;
+        padding-left: 12px;
+        padding-bottom: 12px;
+        margin-top: 10px;
+    }
     &:hover {
         box-shadow: 1px 2px 8px $gray;
     }
@@ -19,21 +34,35 @@
         min-width: 102px;
         min-height: 107px;
         margin-top: 1em;
+        @include tablet-sm {
+            min-width: 80px;
+            min-height: 83.92px;
+        }
     }
-    h4 {
-        font-family: $sansation;
-        font-size: 22px;
-        font-weight: $regular;
-        color: $blue;
-        margin-top: 20px;
-        margin-bottom: 0.5em;
+    .text {
+        h4 {
+            font-family: $sansation;
+            font-size: 22px;
+            font-weight: $regular;
+            color: $blue;
+            margin-top: 20px;
+            margin-bottom: 0.5em;
+            text-align: center;
+            @include tablet-sm {
+                font-size: 18px;
+            }
+        }
+        p {
+            font-family: $sansation;
+            font-weight: $regular;
+            font-size: 12px;
+            color: $gray;
+            text-align: center;
+            margin: 1em 1.5em 1em 1.5em;
+            @include tablet-sm {
+                font-size: 10px;
+            }
+        }
     }
-    p {
-        font-family: $sansation;
-        font-weight: $regular;
-        font-size: 12px;
-        color: $gray;
-        text-align: center;
-        margin: 1em 1.5em 1em 1.5em;
-    }
+
 }
