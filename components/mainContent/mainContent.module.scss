@@ -71,32 +71,32 @@
         }
 
     }
-    .woman_gray {
-        grid-row: 1/6 ;
-        max-height: 650px;
-        transform: translateY(9em);
+    .main_people {
+        grid-row: 1/6;
+        max-height: 623px;
+        transform: translate(-177px, 83px);
         grid-column: 8/12;
         @include laptop-lg {
-            max-height: 540px;
-            transform: translate(-20px,211px);
+            max-height: 580px;
+            transform: translate(-230px, 121px);
         }
         @include laptop-sm {
             max-height: 472px;
-            transform: translate(-5px,14.8em);
+            transform: translate(-173px, 14.8em);
             grid-column: 7/12;
         }
         @include tablet {
-            max-height: 405px;
-            transform: translate(-23px,307px);
+            max-height: 451px;
+            transform: translate(-213px, 250px);
         }
         @include tablet-sm {
             max-height: 350px;
-            transform: translate(28px, 398px);
+            transform: translate(-99px, 353px);
             grid-column: 5/12;
         }
         @include mobile {
             max-height: 281px;
-            transform: translate(37px, 260px);
+            transform: translate(-66px, 241px);
             grid-column: 5/12;
         }
     }
@@ -122,20 +122,24 @@
             transform: translate(-164px, 104px) rotate(6deg);
         }
         &__front {
-            height: 220px;
+            height: 406px;
             grid-row: 1/6;
             grid-column: 9/12;
-            transform: translate(130px, 484px);
-            @include laptop-lg {
-                transform: translate(25px, 484px);
+            transform: translate(-441px, 321px) rotate(336deg);
+            @include laptop-sm {
+                height: 348px;
+                transform: translate(-384px, 372px) rotate(332deg);
+            }
+            @include tablet {
+                transform: translate(-380px, 436px) rotate(336deg);
             }
             @include tablet-sm {
-                height: 152px;
-                transform: translate(11px, 549px);
+                height: 246px;
+                transform: translate(-285px, 432px) rotate(336deg);
             }
             @include mobile{
-                height: 137px;
-                transform: translate(16px, 414px) rotate(27deg);
+                height: 185px;
+                transform: translate(-262px, 344px) rotate(355deg);
             }
         }
     }
@@ -200,10 +204,10 @@
         }
         @include mobile {
             margin: auto;
-            height: 35px;
+            height: 28px;
             font-size: 1rem;
             grid-column: 1/12;
-            transform: translate(13px,-7.8em);
+            transform: translate(13px, -8.8em);
         }
     }
 }

@@ -10,7 +10,7 @@ export default function MainContent({sectionContentData}) {
       ctaButttonText = {}
     } = sectionContentData.fields;
   
-    const { container, btnPrimary, deco_moon, deco_moon__front, woman_gray } = styles;
+    const { container, btnPrimary, deco_moon, deco_moon__front, main_people } = styles;
 
     return (
       <div className={container}>
@@ -18,8 +18,8 @@ export default function MainContent({sectionContentData}) {
           {titleFirstSlice}<span>{` ${spanInTitle} `}</span> {titleSecondSlice}
         </h1>
         <img className={deco_moon} src="img/media-luna.png" alt=""/>
-        <img className={woman_gray} src="img/people-hero2.png" alt="people" />
         <img className={deco_moon__front} src="img/decorative-halfmoon-front.png" alt="" />
+        <img className={main_people} src="img/main.png" alt="people" />
         <p>
           {paragraph}
         </p>
