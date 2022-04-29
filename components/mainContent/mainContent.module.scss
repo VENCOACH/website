@@ -14,7 +14,7 @@
         font-weight: $bold;
         font-size: 60px;
         color: $blue;
-        margin-top: 1em;
+        margin-top: 67px;
         grid-column: 1 / 8;
         grid-row: 1/ 6;
         @include laptop-lg {
@@ -29,12 +29,15 @@
             
         }
         @include tablet-sm {
-            font-size: 35px;
+            font-size: 41px;
         }
         @include mobile {
-            font-size: 25px;
+            font-size: 33px;
             text-align:center;
             margin: 30px 10px
+        }
+        @include mobile-sm {
+            font-size: 28px;
         }
     }
     span {
@@ -148,9 +151,9 @@
         font-size: 1.25rem;
         font-family: $nunito;
         font-weight: $semibold;
-        transform: translateY(-2em);
+        transform: translateY(-60px);
         @include laptop-lg {
-            transform: translateY(-4em);
+            transform: translateY(-107px);
             font-size: 1.1rem;
             grid-column: 1/5;
         }
@@ -162,17 +165,20 @@
             transform: translateY(1em);
         }
         @include tablet-md {
-            transform: translateY(3em);
+            transform: translateY(-15px);
         }
         @include tablet-sm {
             grid-column: 1/10;
-            transform: translateY(1em);
+            transform: translateY(-34px);
         }
         @include mobile {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-align: center;
             grid-column: 1/13;
-            transform: translateY(-2em);
+            transform: translateY(-48px);
+            margin: 54px;
+        }
+        @include mobile-sm {
             margin: 20px;
         }
     }
@@ -206,7 +212,7 @@
             height: 28px;
             font-size: 1rem;
             grid-column: 1/12;
-            transform: translate(13px, -8.8em);
+            transform: translate(13px, -161px);
         }
     }
 }
