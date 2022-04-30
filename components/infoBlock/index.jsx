@@ -1,8 +1,8 @@
 import styles from './infoBlock.module.scss';
 
-export default function infoBlock({titleText, subtitleText, paragraphText='', _center=false, p_wrapper_margin}) {
+export default function infoBlock({titleText, subtitleText, paragraphText='', _center=false, p_wrapper_margin, paragraphText_second}) {
 
-  const {container, subtitle, title, paragraph, paragraphWrapper, centerContainer, centerSubtitle, centerTitle} = styles;
+  const {container, subtitle, title, paragraph, paragraph_second, paragraphWrapper, centerContainer, centerSubtitle, centerTitle} = styles;
 
   return (
     <div className={`${container} ${_center ? centerContainer : ''}`} >
@@ -14,6 +14,7 @@ export default function infoBlock({titleText, subtitleText, paragraphText='', _c
         {paragraphText && 
         <div className={paragraphWrapper} style={{marginRight: p_wrapper_margin}}>
           <p className={paragraph}>{paragraphText}</p>
+          <p className={paragraph_second}>{paragraphText_second}</p>
         </div>}
     </div>
   )
