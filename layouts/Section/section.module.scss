@@ -8,6 +8,7 @@
     overflow: hidden;
     filter: opacity(100%);
     width: 100vw;
+    margin-bottom: 60px;
     @include ultraWideScreen {
         max-width: 2560px;
     }
