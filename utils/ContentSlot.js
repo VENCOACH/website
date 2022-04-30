@@ -1,6 +1,7 @@
 import MainContent from "../components/mainContent";
 import AboutUs from "../components/aboutUs";
 import OurServices from "../components/ourServices";
+import WhyChooseUs from "../components/whyChooseUs";
 
 export default class ContentSlot {
 
@@ -14,6 +15,8 @@ export default class ContentSlot {
                 return <AboutUs sectionContentData={sectionContentData} />
             case 'c-OurServicesSectionLayout':
                 return <OurServices sectionContentData={sectionContentData} />
+            case 'd-WhyChooseUsSectionLayout':
+                return <WhyChooseUs sectionContentData={sectionContentData} />
             default: 
                 throw new Error(` 📛 THE COMPONENT "${contentId}" DOES NOT EXIST, PLEASE CHECK 😓`); 
         }
