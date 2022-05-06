@@ -10,3 +10,57 @@
         height: 500px !important;
     }
 }
+
+.b-AboutSectionLayout {
+    @include laptop-sm {
+        height: 642px !important;
+    }
+    @include tablet {
+        height: 1250px !important;
+    }
+    @include mobile {
+        height: 1138px !important;
+    }
+}
+
+.c-OurServicesSectionLayout {
+    @include laptop-lg {
+        height: 1260px !important;
+    }
+    @include tablet {
+        height: 1326px !important;
+    }
+    @include tablet-sm {
+        height: 591px !important;
+    }
+}
+
+.d-WhyChooseUsSectionLayout {
+    @include laptop-sm {
+        height: 698px !important;
+    }
+    @include tablet {
+        height: 906px !important;
+    }
+    @include tablet-sm {
+        height: 876px !important;
+    }
+    @include mobile {
+        height: 790px !important;
+    }
+}
+
+
+// InfoBlock sections overrides
+
+.WhyChooseUs {
+    @include tablet {
+        margin-right: 163px;
+    }
+    @include tablet-sm {
+        margin-right: 287px;
+    }
+    @include mobile {
+        margin-right: 221px;
+    }
+}

@@ -3,7 +3,7 @@ import styles from './Home.module.sass';
 import Section from '../../layouts/Section';
 import Organizer from '../../utils/Organizer';
 import { useEffect, useState } from 'react';
-
+import BannerNumbers from '../../components/bannerNumbers';
 
 export default function Home({rawContent}) {
 
@@ -23,7 +23,7 @@ export default function Home({rawContent}) {
         <meta name="Vencoach" content="Coaching profesional" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <BannerNumbers />
       {orderContent && orderContent.map((each)=>{
         return <Section key={each.fields.entryTitle} sectionData={each}/>
       })}

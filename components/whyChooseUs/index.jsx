@@ -1,6 +1,7 @@
 import InfoBlock from "../infoBlock";
 import styles from './whyChooseUs.module.scss';
 import Image from 'next/image';
+import useWindowSize from "../../hooks/useWindowSize";
 
 export default function WhyChooseUs({sectionContentData}) {
 
@@ -18,7 +19,10 @@ export default function WhyChooseUs({sectionContentData}) {
     paragraphSecond,
   } = sectionContentData.fields
 
-  const { rightImage, container, leftSide, banner_numbers} = styles;
+  const { rightImage, container, leftSide, circleDiagram, imageSmallScreens} = styles;
+
+  const size = useWindowSize();
+
   return (
     <div className={container}>
         <aside className={leftSide}>
@@ -27,13 +31,16 @@ export default function WhyChooseUs({sectionContentData}) {
             subtitleText={subtitle}
             paragraphText={paragraph}
             paragraphText_second={paragraphSecond}
-            p_wrapper_margin={100}
+            fromComponent={'WhyChooseUs'}
             />
-            <img src="img/ciclo_diagrama.png" alt="" />
+            <img className={circleDiagram} src="img/ciclo_diagrama.png" alt="" />
         </aside>
         <aside>
             <div className={rightImage}>
-            <Image src={`https:${rightImg_url}`} layout="fill" priority />
+            {size.width > 770 ?
+                <Image src={`https:${rightImg_url}`} layout="fill" priority /> :
+                <img className={imageSmallScreens} src='img/escaleras_horizontal.jpg' /> //connect to contentful and make a next component image
+            }
             </div>
         </aside>
     </div>

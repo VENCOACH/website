@@ -7,9 +7,6 @@
     grid-template-columns: repeat(12,1fr);
     overflow: hidden;
     z-index: -1;
-    @include laptop-sm {
-        padding-top: 65px;
-    }
     @include tablet {
         display: block;
         padding-top: 5px;
