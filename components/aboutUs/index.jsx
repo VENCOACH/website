@@ -47,7 +47,6 @@ export default function AboutUs({sectionContentData}) {
                   src={`https:${url2}`}
                   layout='fill'
                   priority
-                  quality={100}
               />
           </div>
           <div className={image01}>
@@ -55,7 +54,6 @@ export default function AboutUs({sectionContentData}) {
                 src={`https:${url}`}
                 layout='fill'
                 priority
-                quality={100}
             />
           </div>
           <img src="img/card-experiencie-number.png" alt="years of experience" className={experience} />
