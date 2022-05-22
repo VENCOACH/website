@@ -21,20 +21,6 @@
         }
         @include mobile-sm {
         }
-        // .circleDiagram {
-        //     transform: translate(218px, 164px);
-        //     @include laptop-lg {
-        //         transform: translate(143px, 179px);
-        //         width: 198px;
-        //     }
-        //     @include laptop-sm {
-        //         transform: translate(53px, 128px);
-        //         width: 178px;
-        //     }
-        //     @include tablet {
-        //         display: none;
-        //     }
-        // }
         .card01 {
             transform: translate(87px, 26px);
             @include laptop-lg {
@@ -85,26 +71,5 @@
         transform: translate(12px, 4px);
     }
 
-    // .imageSmallScreens {
-    //     width: 587px;
-    //     height: 413px;
-    //     transform: translate(214px, -78px);
-    //     @include tablet {
-    //         transform: translate(214px, 119px);
-    //     }
-    //     @include tablet-sm {
-    //         width: 393px;
-    //         height: 276.5px;
-    //         transform: translate(217px, 204px);
-    //     }
-    //     @include mobile {
-    //         width: 333px;
-    //         height: 234px;
-    //         transform: translate(240px, 95px);
-    //     }
-    //     @include mobile-sm {
-    //         transform: translate(214px, -78px);
-    //     }
-    // }
 }
 
