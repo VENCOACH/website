@@ -50,10 +50,34 @@
     }
 }
 
+.e-SpecializedInSectionLayout {
+    margin-top: 300px;
+    @include laptop-lg {
+        height: 856.3px !important;
+    }
+    @include laptop-sm {
+        margin-top: 280px;
+        height: 428px !important;
+    }
+    @include tablet {
+        margin-top: 146px;
+        height: 1012px!important;
+    }
+    @include tablet-sm {
+        height: 905px !important;
+    }
+    @include mobile {
+        height: 760px !important;
+    }
+    @include mobile-sm {
+        height: 850px !important;
+    }
+}
+
 
 // InfoBlock sections overrides
 
-.WhyChooseUs {
+.infoBlock-paragraphs_WhyChooseUs {
     @include tablet {
         margin-right: 163px;
     }
@@ -62,5 +86,18 @@
     }
     @include mobile {
         margin-right: 221px;
+    }
+}
+
+.infoBlock-container_SpecializedIn {
+    margin-left: 45px;
+    @include laptop-lg {
+        width: 342px !important;
+    }
+    @include tablet {
+        width: 98% !important;
+    }
+    @include tablet-sm {
+        width: 77% !important;
     }
 }
