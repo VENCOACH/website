@@ -75,13 +75,23 @@
 }
 
 .f-TeamMembers {
-    margin-top: 184px;
+    margin-top: 118px;
+
+    @include laptop-lg {
+        height: 790px;
+    }
+    @include laptop-sm {
+        height: 659px !important;
+    }
     @include tablet {
-        height:600px  !important ;
+        height:625px  !important ;
         margin-top: 0px !important; 
     }
     @include mobile {
-        height: 555px !important;
+        height: 580px !important;
+    }
+    @include mobile-sm {
+        margin-bottom: 35px !important;
     }
 }
 
@@ -115,7 +125,19 @@
 
 .infoBlock-container_teamMembers {
     height: 93px !important;
+    @include mobile {
+        height: 55px !important;
+    }
 }
+
+.infoBlock-title_teamMembers {
+    @include mobile {
+        margin: 0px;
+    }
+}
+
+////////////
+
 
 .slick-dots {
     bottom:18px !important;

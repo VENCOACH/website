@@ -13,5 +13,10 @@
     @include tablet {
         width: 279px !important;
         min-height: 365.5px;
+
+    }
+    @include tablet-sm {
+        width: 359px !important;
+        min-height: 470.29px;
     }
 }

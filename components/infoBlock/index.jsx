@@ -10,7 +10,7 @@ export default function infoBlock({titleText, subtitleText, paragraphText='', _c
           <img src="img/vineta.png" alt="" />
           <h3> {subtitleText} </h3>
         </div>
-        <h2 className={`${title} ${_center? centerTitle : ''}`}>{titleText}</h2>
+        <h2 className={`${title} ${_center? centerTitle : ''} ${fromComponent? `infoBlock-title_${fromComponent}` : ""}`}>{titleText}</h2>
         {paragraphText && 
         <div className={`${paragraphWrapper} ${fromComponent? `infoBlock-paragraphs_${fromComponent}` : ""}`} style={{marginRight: p_wrapper_margin}}>
           <p className={paragraph}>{paragraphText}</p>
