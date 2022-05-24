@@ -74,6 +74,17 @@
     }
 }
 
+.f-TeamMembers {
+    margin-top: 184px;
+    @include tablet {
+        height:600px  !important ;
+        margin-top: 0px !important; 
+    }
+    @include mobile {
+        height: 555px !important;
+    }
+}
+
 
 // InfoBlock sections overrides
 
@@ -99,5 +110,23 @@
     }
     @include tablet-sm {
         width: 77% !important;
+    }
+}
+
+.infoBlock-container_teamMembers {
+    height: 93px !important;
+}
+
+.slick-dots {
+    bottom:18px !important;
+    @include laptop-sm {
+        bottom:0px !important;
+    }
+}
+
+.slick-slide {
+    @include tablet-sm {
+        display: flex !important;
+        justify-content: center !important;
     }
 }
