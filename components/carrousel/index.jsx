@@ -17,7 +17,7 @@ export default class Carrousel extends Component {
         autoplaySpeed: 3000,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1440,
                 settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
@@ -33,13 +33,11 @@ export default class Carrousel extends Component {
             ]
     };
 
-    const { teamImage } = this.props.styles;
-
     return (
       <>
         <Slider {...settings}>
           {this.props.images.map((each, index) => (
-            <div key={index} className={teamImage}>
+            <div key={index} className={this.props.imageContainer}>
               <Image src={`https:${each.fields.file.url}`} layout="fill" priority />
             </div>
           ))}

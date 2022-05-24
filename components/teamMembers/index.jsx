@@ -20,7 +20,7 @@ export default function TeamMembers({sectionContentData}) {
             _center = {true}
             fromComponent="teamMembers"
         />
-        <Carrousel images={teamPhotos} styles={styles}/>
+        <Carrousel images={teamPhotos} imageContainer={styles.teamImage}/>
     </div>
   )
 }
