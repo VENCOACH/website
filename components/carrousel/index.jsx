@@ -38,7 +38,7 @@ export default class Carrousel extends Component {
         <Slider {...settings}>
           {this.props.images.map((each, index) => (
             <div key={index} className={this.props.imageContainer}>
-              <Image src={`https:${each.fields.file.url}`} layout="fill" priority />
+              <Image src={`https:${each.fields.file.url}`} layout="fill"  />
             </div>
           ))}
         </Slider>

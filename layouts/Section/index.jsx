@@ -35,8 +35,8 @@ export default function Section({ sectionData }) {
           layout='fill'
           objectFit='cover'
           objectPosition='center'
-          priority
           quality={100}
+          priority
           />
         }
         <div className={contentBox}>

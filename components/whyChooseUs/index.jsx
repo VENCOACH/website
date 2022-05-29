@@ -38,7 +38,7 @@ export default function WhyChooseUs({sectionContentData}) {
         <aside>
             <div className={rightImage}>
             {size.width > 770 ?
-                <Image src={`https:${rightImg_url}`} layout="fill" priority /> :
+                <Image src={`https:${rightImg_url}`} layout="fill" /> :
                 <img className={imageSmallScreens} src='img/escaleras_horizontal.jpg' /> //connect to contentful and make a next component image
             }
             </div>

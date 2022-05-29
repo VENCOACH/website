@@ -30,7 +30,7 @@ export default function SpecializedIn({sectionContentData}) {
                     <Image 
                         src={`https:${leftImg_url}`} 
                         layout="fill"
-                        priority 
+                         
                     />
                 </div>
             </aside>
