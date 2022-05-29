@@ -12,6 +12,23 @@ export default function TeamMembers({sectionContentData}) {
         teamPhotos
     } = sectionContentData.fields;
 
+    const carrouselResponsiveSettings = [
+      {
+          breakpoint: 1440,
+          settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+          }
+      },
+      {
+          breakpoint: 570,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+          }
+      }
+    ]
+
   return (
     <div className='container'>
         <InfoBlock 
@@ -20,7 +37,14 @@ export default function TeamMembers({sectionContentData}) {
             _center = {true}
             fromComponent="teamMembers"
         />
-        <Carrousel images={teamPhotos} imageContainer={styles.teamImage}/>
+        <Carrousel 
+          images={teamPhotos} 
+          imageContainer={styles.teamImage} 
+          autoplay
+          dots
+          DefaultSlidesToShow={3}
+          carrouselResponsiveSettings={carrouselResponsiveSettings}
+        />
     </div>
   )
 }

@@ -1,0 +1,25 @@
+@import '../../sass/breakpoints';
+
+
+
+.testimonialCardImage {
+    position: relative;
+    width: 578px !important;
+    min-height: 357px;
+    @include laptop-lg {
+        width: 430px !important;
+        min-height:265.6px;
+    }
+    @include laptop-sm {
+        width: 578px !important;
+        min-height: 357px;
+    }
+    @include tablet {
+        width: 430px !important;
+        min-height: 265.6px;
+    }
+    @include tablet-sm {
+        width: 280px !important;
+        min-height:172.94px;
+    }
+}

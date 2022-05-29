@@ -8,29 +8,14 @@ export default class Carrousel extends Component {
 
   render() {
     const settings = {
-        dots: true,
+        dots: this.props.dots,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: this.props.DefaultSlidesToShow,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: this.props.autoplay,
         speed: 1000,
         autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 1440,
-                settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 570,
-                settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-                }
-            }
-            ]
+        responsive: this.props.carrouselResponsiveSettings
     };
 
     return (

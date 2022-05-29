@@ -4,6 +4,7 @@ import OurServices from "../components/ourServices";
 import WhyChooseUs from "../components/whyChooseUs";
 import SpecializedIn from "../components/specializedIn";
 import TeamMembers from "../components/teamMembers";
+import Testimonials from "../components/testimonials";
 export default class ContentSlot {
 
     static getComponent(contentId, sectionContentData) {
@@ -22,6 +23,8 @@ export default class ContentSlot {
                 return <SpecializedIn sectionContentData={sectionContentData} />
             case 'f-TeamMembers':
                 return <TeamMembers sectionContentData={sectionContentData} />
+            case 'g-testimonials':
+                return <Testimonials sectionContentData={sectionContentData} />
             default: 
                 throw new Error(` 📛 THE COMPONENT "${contentId}" DOES NOT EXIST, PLEASE CHECK 😓`); 
         }
