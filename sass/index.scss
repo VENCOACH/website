@@ -50,17 +50,16 @@
     }
 }
 
-.e-SpecializedInSectionLayout {
-    margin-top: 300px;
+.f-SpecializedInSectionLayout {
+    margin-top: 60px;
     @include laptop-lg {
         height: 856.3px !important;
     }
     @include laptop-sm {
-        margin-top: 280px;
+        margin-top: 52px;
         height: 428px !important;
     }
     @include tablet {
-        margin-top: 146px;
         height: 1012px!important;
     }
     @include tablet-sm {
@@ -74,18 +73,18 @@
     }
 }
 
-.f-TeamMembers {
-    margin-top: 118px;
-
+.e-TeamMembers {
+    margin-top: 285px;
     @include laptop-lg {
         height: 790px;
+        margin-top: 186px;
     }
     @include laptop-sm {
         height: 659px !important;
     }
     @include tablet {
         height:625px  !important ;
-        margin-top: 0px !important; 
+        margin-top: 100px !important; 
     }
     @include mobile {
         height: 580px !important;

@@ -19,10 +19,10 @@ export default class ContentSlot {
                 return <OurServices sectionContentData={sectionContentData} />
             case 'd-WhyChooseUsSectionLayout':
                 return <WhyChooseUs sectionContentData={sectionContentData} />
-            case 'e-SpecializedInSectionLayout':
+            case 'e-TeamMembers':
+                    return <TeamMembers sectionContentData={sectionContentData} />
+            case 'f-SpecializedInSectionLayout':
                 return <SpecializedIn sectionContentData={sectionContentData} />
-            case 'f-TeamMembers':
-                return <TeamMembers sectionContentData={sectionContentData} />
             case 'g-testimonials':
                 return <Testimonials sectionContentData={sectionContentData} />
             default: 
