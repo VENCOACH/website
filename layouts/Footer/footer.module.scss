@@ -1,0 +1,53 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+.container {
+    background-image: url('../../public/img/footer_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 875px;
+    position:relative;
+}
+
+.contentBox {
+    position: relative;
+    width: 90vw;
+    max-width: 1300px;
+    display: block;
+    margin: auto;
+    @include laptop-lg {
+        max-width: 960px
+    }
+    @include laptop-sm {
+        max-width: 720px
+    }
+    @include tablet {
+        max-width: 560px
+    }
+    @include tablet-sm {
+        max-width: 430px
+    }
+    @include mobile {
+        width: 100vw
+    }
+}
+
+.decoImage {
+    width: 100vw;
+    height: calc(100vw / 4.1676);
+    position: absolute;
+    bottom: 0px;
+    @include tablet-md {
+        height: 262px;
+    }
+}
+
+.footerEnd {
+    width: 100vw;
+    height: 135px;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+}
