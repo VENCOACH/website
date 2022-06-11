@@ -28,7 +28,7 @@ export default function Section({ sectionData }) {
   }
 
   return (
-      <section className={`${backgroundImg} ${entryTitle}`} style={sectionGeneralStyle}>
+      <section className={`${backgroundImg} ${entryTitle}`} style={sectionGeneralStyle} id={entryTitle}>
         {bgimg === 'true' &&
           <Image
           src={`https:${imgUrl}`}

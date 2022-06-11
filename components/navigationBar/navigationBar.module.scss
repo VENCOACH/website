@@ -5,6 +5,13 @@
     display: flex;
     flex-direction: column;
     height: 120px;
+    position: fixed;
+    width: 100vw;
+    z-index: 99999;
+}
+
+.top {
+    transform: translate(0px, -43px);
 }
 
 .contentBox {
@@ -31,6 +38,8 @@
 
 .upperSection {
     background-color: $blue;
+    opacity: 100;
+    transition:all 0.5s ease;
     .contentBox{
         display: flex;
         position: relative;
@@ -79,6 +88,7 @@
 
 .bottomSection {
     background-color: $white;
+    transition: all 0.5s ease;
     .contentBox {
         display: flex;
         align-items: center;
@@ -152,4 +162,8 @@
             }
         }
     }
+}
+
+.hide {
+    opacity: 0;
 }

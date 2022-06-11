@@ -1,0 +1,96 @@
+{
+    "footer": [
+        {
+            "title":"Sobre Nosotros",
+            "customBullets":"true",
+            "text":"lorem ipsim dolure, paratar dumalgono tereca, il caste do nosotLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ultric.",
+            "socialIcons": "true"
+        },
+        {
+            "title":"Secciones",
+            "links":[
+                {
+                    "linkTitle": "Home",
+                    "href":"navigationTop",
+                    "offset":"0"
+                },
+                {
+                    "linkTitle": "Acerca de Nosotros",
+                    "href": "b-AboutSectionLayout"
+                },
+                {
+                    "linkTitle": "Nuestros Servicios",
+                    "href": "c-OurServicesSectionLayout"
+                },
+                {
+                    "linkTitle": "Porqué escogernos",
+                    "href": "d-WhyChooseUsSectionLayout"
+                },
+                {
+                    "linkTitle": "Equipo",
+                    "href" : "e-TeamMembers"
+                },
+                {
+                    "linkTitle": "Especializados en",
+                    "href": "f-SpecializedInSectionLayout"
+                },
+                {
+                    "linkTitle": "Testimonios",
+                    "href": "g-testimonials"
+                },
+                {
+                    "linkTitle": "Contacto"
+                }
+            ]
+        },
+        {
+            "title":"Servicios",
+            "links":[
+                {
+                    "linkTitle": "Coaching empresarial"
+                },
+                {
+                    "linkTitle": "Tutorías"
+                },
+                {
+                    "linkTitle": "Consultoría"
+                },
+                {
+                    "linkTitle": "Personalización"
+                }
+            ]
+        },
+        {
+            "title": "Links",
+            "links": [
+                {
+                    "linkTitle": "Trabaja con Nosotros"
+                },
+                {
+                    "linkTitle": "Coaching en Venezuela"
+                },
+                {
+                    "linkTitle": "Política de privacidad"
+                },
+                {
+                    "linkTitle": "Socios"
+                }
+            ]
+        },
+        {
+            "title": "Contactos",
+            "customBullets":"true",
+            "links": [
+                {
+                    "linkTitle": "Calle 72 , av 10 .Edif Las americas,"
+                },
+                {
+                    "linkTitle": "+54 0424 613 8945"
+                },
+                {
+                    "linkTitle": "vencoach@gmail.com"
+                }
+            ]
+        }
+    ]
+}

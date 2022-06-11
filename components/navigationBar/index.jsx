@@ -1,12 +1,37 @@
+import { useState, useEffect } from 'react';
 import styles from './navigationBar.module.scss';
 
 export default function NavigationBar() {
 
-  const {wrapper, contentBox, upperSection, bottomSection, address, phone, rightSide, socialIcons, email} = styles;
+  const {hide, top, wrapper, contentBox, upperSection, bottomSection, address, phone, rightSide, socialIcons, email} = styles;
 
+  const [hideContactBar, setHideContactBar] = useState(false)
+  const [hideNavBar, setHideNavBar] = useState(false)
+
+  const toggleContactsBar = () => {
+    // console.log(window.scrollY)
+    if (window.scrollY >= 20) {
+      setHideContactBar(true)
+      if (window.scrollY >= 6200) {
+        setHideNavBar(true);
+      }
+    } else {
+      setHideContactBar(false)
+    }
+
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleContactsBar);
+    return () => {
+      window.removeEventListener('scroll',toggleContactsBar);
+    }
+  }, [])
+  
+  
   return (
-    <nav className={wrapper}>
-      <section className={upperSection}>
+    <nav className={`${wrapper} ${hideNavBar ? hide :""}`} id="navigationTop">
+      <section className={`${upperSection}`}>
         <div className={contentBox}>
           <div className={address}>
             <img src="img/icon-location.png" alt="" />
@@ -29,7 +54,7 @@ export default function NavigationBar() {
           </div>
         </div>
       </section>
-      <section className={bottomSection}>
+      <section className={`${bottomSection} ${hideContactBar ? top : ""}`}>
         <div className={contentBox}>
           <figure>
             <img src="img/logo.png" alt="Vencoach Logo" />
