@@ -24,7 +24,7 @@ export default function NavMenu({data}) {
                     </li>
                 ))}
             </ul>
-            {data.socialcons && <SocialIcons/>}
+            {/* {data.socialcons && <SocialIcons/>} */}
         </div>
     </div>
   )
