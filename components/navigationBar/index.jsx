@@ -14,9 +14,11 @@ export default function NavigationBar() {
       setHideContactBar(true)
       if (window.scrollY >= 6200) {
         setHideNavBar(true);
+      } else if (window.scrollY <= 6200) {
+        setHideNavBar(false);        
       }
     } else {
-      setHideContactBar(false)
+      setHideContactBar(false);
     }
 
   }
