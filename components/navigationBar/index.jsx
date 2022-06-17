@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from './navigationBar.module.scss';
+import {Link} from 'react-scroll';
 
-export default function NavigationBar() {
+export default function NavigationBar({data}) {
 
   const {hide, top, wrapper, contentBox, upperSection, bottomSection, address, phone, rightSide, socialIcons, email} = styles;
 
@@ -32,8 +33,8 @@ export default function NavigationBar() {
   
   
   return (
-    <nav className={`${wrapper} ${hideNavBar ? hide :""}`} id="navigationTop">
-      <section className={`${upperSection}`}>
+    <nav className={`${wrapper} ${hideNavBar ? hide :""}`} >
+      <section className={`${upperSection}`} >
         <div className={contentBox}>
           <div className={address}>
             <img src="img/icon-location.png" alt="" />
@@ -62,21 +63,19 @@ export default function NavigationBar() {
             <img src="img/logo.png" alt="Vencoach Logo" />
           </figure>
           <ul>
-            <li>
-              <a>Nosotros</a>
-            </li>
-            <li>
-              <a>Servicios</a>
-            </li>
-            <li>
-              <a>Logros</a>
-            </li>
-            <li>
-              <a>Equipo</a>
-            </li>
-            <li>
-              <a>Testimonios</a>
-            </li>
+           {data.links && data.links.map((link,index) => (
+              <li key={index}>
+                  <Link  
+                      to={link.href}
+                      spy={true} 
+                      smooth={true} 
+                      offset={parseInt(link.offset) || 0} 
+                      duration={parseInt(link.duration) || 500}
+                  >
+                      {link.linkTitle}
+                  </Link>
+              </li>
+            ))}
           </ul>
           <button>Contactar</button>
         </div>

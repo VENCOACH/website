@@ -12,34 +12,44 @@
                 {
                     "linkTitle": "Home",
                     "href":"navigationTop",
-                    "offset":"0"
+                    "offset":"-200",
+                    "duration":"1000"
                 },
                 {
                     "linkTitle": "Acerca de Nosotros",
-                    "href": "b-AboutSectionLayout"
+                    "href": "b-AboutSectionLayout",
+                    "offset":"-100",
+                    "duration":"900"
                 },
                 {
                     "linkTitle": "Nuestros Servicios",
-                    "href": "c-OurServicesSectionLayout"
+                    "href": "c-OurServicesSectionLayout",
+                    "offset":"-110",
+                    "duration":"800"
                 },
                 {
                     "linkTitle": "Porqué escogernos",
-                    "href": "d-WhyChooseUsSectionLayout"
+                    "href": "d-WhyChooseUsSectionLayout",
+                    "offset":"-120",
+                    "duration":"700"
                 },
                 {
                     "linkTitle": "Equipo",
-                    "href" : "e-TeamMembers"
+                    "href" : "e-TeamMembers",
+                    "offset":"-150",
+                    "duration":"600"
                 },
                 {
                     "linkTitle": "Especializados en",
-                    "href": "f-SpecializedInSectionLayout"
+                    "href": "f-SpecializedInSectionLayout",
+                    "offset":"-50",
+                    "duration":"600"
                 },
                 {
                     "linkTitle": "Testimonios",
-                    "href": "g-testimonials"
-                },
-                {
-                    "linkTitle": "Contacto"
+                    "href": "g-testimonials",
+                    "offset":"-80",
+                    "duration":"400"
                 }
             ]
         },

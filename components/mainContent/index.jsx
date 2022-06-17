@@ -13,7 +13,7 @@ export default function MainContent({sectionContentData}) {
     const { container, btnPrimary, deco_moon, deco_moon__front, main_people } = styles;
 
     return (
-      <div className={container}>
+      <section className={container} id="navigationTop">
         <h1>
           {titleFirstSlice}<span>{` ${spanInTitle} `}</span> {titleSecondSlice}
         </h1>
@@ -24,6 +24,6 @@ export default function MainContent({sectionContentData}) {
           {paragraph}
         </p>
         <button className={btnPrimary}>{ctaButttonText}</button>
-      </div>
+      </section>
     );
 }
