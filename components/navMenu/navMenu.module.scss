@@ -3,6 +3,8 @@
 
 .linkItem {
     cursor: pointer;
+    display: flex;
+    align-items: center;
 } 
 
 .noBullets {
@@ -56,4 +58,8 @@
     left: 0;
     top: 100%;
     position: absolute;
+}
+
+.icon {
+    margin-right: 10px;
 }

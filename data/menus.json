@@ -92,15 +92,28 @@
             "customBullets":"true",
             "links": [
                 {
-                    "linkTitle": "Calle 72 , av 10 .Edif Las americas,"
+                    "linkTitle": "Calle 72 , av 10 .Edif Las americas",
+                    "iconName": "location.png",
+                    "size": "27"
                 },
                 {
-                    "linkTitle": "+54 0424 613 8945"
+                    "linkTitle": "+54 0424 613 8945",
+                    "iconName": "phone.png"
                 },
                 {
-                    "linkTitle": "vencoach@gmail.com"
+                    "linkTitle": "vencoach@gmail.com",
+                    "iconName": "mail.png"
                 }
-            ]
+            ],
+            "customStyles": {
+                "ul": {
+                    "paddingLeft": "0px",
+                    "lineHeight": "34px"
+                },
+                "container": {
+                    "max-width": "350px"
+                }
+            }
         }
     ]
 }

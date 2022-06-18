@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './navigationBar.module.scss';
 import {Link} from 'react-scroll';
+import SocialIcons from '../socialIcons';
 
 export default function NavigationBar({data}) {
 
@@ -49,11 +50,7 @@ export default function NavigationBar({data}) {
               <img src="img/icon-email.png" alt="" />
               <p>info@vencoach.org</p>
             </div>
-            <div className={socialIcons}>
-              <img src="img/icon-facebook.png" alt="" />
-              <img src="img/icon-twitter.png" alt="" />
-              <img src="img/icon-instagram.png" alt="" />
-            </div>
+            <SocialIcons/>
           </div>
         </div>
       </section>
