@@ -45,3 +45,10 @@ export default function NavMenu({data}) {
       </div>
     );
 }
+
+function componentSpecial () {
+  const aurora = [];
+  if (param) {
+      
+  }
+}
