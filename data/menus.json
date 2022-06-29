@@ -92,16 +92,16 @@
             "customBullets":"true",
             "links": [
                 {
-                    "linkTitle": "Calle 72 , av 10 .Edif Las americas",
+                    "linkTitle": "Maracaibo, Venezuela",
                     "iconName": "location.png",
                     "size": "27"
                 },
                 {
-                    "linkTitle": "+54 0424 613 8945",
+                    "linkTitle": "...",
                     "iconName": "phone.png"
                 },
                 {
-                    "linkTitle": "vencoach@gmail.com",
+                    "linkTitle": "contacto@vencoach.org",
                     "iconName": "mail.png"
                 }
             ],

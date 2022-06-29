@@ -30,7 +30,7 @@ export default function SpecializedIn({sectionContentData}) {
                     <Image 
                         src={`https:${leftImg_url}`} 
                         layout="fill"
-                         
+                        alt="coaches talking"
                     />
                 </div>
             </aside>

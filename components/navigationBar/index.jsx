@@ -39,16 +39,16 @@ export default function NavigationBar({data}) {
         <div className={contentBox}>
           <div className={address}>
             <img src="img/icon-location.png" alt="" />
-            <address>Calle 72 , av 10 .Edif Las americas,</address>
+            <address>Marcaibo, Venezuela</address>
           </div>
           <div className={rightSide}>
             <div className={phone}>
               <img src="img/icon-phone.png" alt="" />
-              <p>+54 0424 6138945</p>
+              <p>...</p>
             </div>
             <div className={email}>
               <img src="img/icon-email.png" alt="" />
-              <p>info@vencoach.org</p>
+              <p>contacto@vencoach.org</p>
             </div>
             <SocialIcons/>
           </div>
