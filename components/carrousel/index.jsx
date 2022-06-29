@@ -12,6 +12,7 @@ export default class Carrousel extends Component {
     this.previous = this.previous.bind(this);
   }
 
+  
   componentDidUpdate() {
     if(this.props.next) {this.next()};
     this.props.setNext(false);
@@ -43,10 +44,11 @@ export default class Carrousel extends Component {
         <Slider {...settings} ref={c => (this.slider = c)}>
           {this.props.images.map((each, index) => (
             <div key={index} className={this.props.imageContainer}>
-              <Image src={`https:${each.fields.file.url}`} layout="fill"  alt="testimonies"/>
+              <Image src={`https:${each.fields.file.url}`} layout="fill"  alt="testimonies" priority/>
             </div>
           ))}
         </Slider>
+        
       </>
     );
   }
