@@ -2,6 +2,7 @@ import styles from './footer.module.scss';
 import NavMenu from '../../components/navMenu';
 import menuData from "../../data/menus.json"
 import {Link} from 'react-scroll';
+import Newsletter from '../../components/newsletter';
 
 export default function Footer() {
 
@@ -10,7 +11,7 @@ export default function Footer() {
   return (
     <footer className={container}>
       <div className={bannerFooter}>
-        <img src='img/banner_newsletter_background.png' className={bannerFooter} alt='' />
+        <Newsletter/>
       </div>
       <img className={decoImage} src='img/deco-polygons.png' alt=''/>
       <nav className={contentBox}>

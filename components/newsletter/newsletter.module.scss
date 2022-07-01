@@ -1,0 +1,72 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+.bannerFooter {
+    position: relative;
+    width: 70vw;
+    display: block;
+    margin: auto;
+    transform:translate(0px, -30px);
+    max-width: 850px;
+    min-width:  567px;
+    @include tablet-sm {
+        display: none;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: vertical;
+    position: relative;
+}
+
+.wrapper {
+    position: absolute;
+    margin-left: 60px;
+    width: 100%;
+}
+
+.title{
+    font-family: $sansation;
+    color: $white;
+    font-size: 25px;
+    margin-bottom:10px;
+    margin-top:0px;
+    @include laptop-sm{
+        font-size: 20px;
+    }
+}
+
+.subtitle{
+    font-family: $dm-sans;
+    color: $white;
+    @include laptop-sm {
+        font-size: 12px;
+    }
+}
+
+.inputEmail {
+    width: 80%;
+    height: 32px;
+    border:none;
+    border-radius: 5px;
+    padding-left: 15px;
+    @include laptop-sm {
+        font-size: 12px;
+    }
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.sentIcon {
+    position: absolute;
+    width: 33px;
+    right: 175px;
+    cursor: pointer;
+    @include laptop-sm {
+        width: 30px;
+        right: 148px;
+    }
+}
