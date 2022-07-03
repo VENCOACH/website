@@ -29,14 +29,12 @@ export default function Newsletter() {
         }
     }
   };
-
   const handleChange =({target})=> {
     setEmail(target.value);
     if(email===''){
       setResponseText('');
     }
   }
-
   return (
     <div className={container}>
         <img src='img/banner_newsletter_background.png' className={bannerFooter} alt='' />
