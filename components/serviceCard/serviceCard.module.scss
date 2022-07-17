@@ -42,11 +42,13 @@
     .text {
         h4 {
             font-family: $sansation;
-            font-size: 22px;
+            font-size: 15px;
             font-weight: $regular;
             color: $blue;
             margin-top: 20px;
             margin-bottom: 0.5em;
+            margin-right: 30px;
+            margin-left: 30px;
             text-align: center;
             @include tablet-sm {
                 font-size: 18px;

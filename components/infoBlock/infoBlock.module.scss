@@ -84,13 +84,14 @@
         color: $gray;
         font-family: $public-sans;
         font-weight: $medium;
-        font-size: 0.9rem;
+        font-size: 13px;
+        text-align: justify;
         @include laptop-lg {
             max-width: 350px;
         }
         @include laptop-sm {
             font-size: 0.8rem;
-            max-width: 264px;
+            max-width: 280px;
         }
         @include tablet {
             max-width: 475px;

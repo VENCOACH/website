@@ -23,7 +23,7 @@ export default function Home({rawContent}) {
         <meta name="Vencoach" content="Coaching profesional" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <BannerNumbers />
+      {/* <BannerNumbers /> */}
       {orderContent && orderContent.map((each)=>{
         return <Section key={each.fields.entryTitle} sectionData={each}/>
       })}

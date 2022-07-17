@@ -41,24 +41,25 @@
 }
 
 .image01{
+    $aspectRatio: 1.1633;
     position: relative;
-    width: 360px;
-    height: 242px;
-    border: solid white 7px;
+    width: 350px;
+    height: calc(350px*$aspectRatio);
+    // border: solid white 7px;
     border-radius: 12px;
     transform: translate(222px, -31px);
     @include laptop-lg{
-        width: 320px;
-        height: 215px;
+       width: 315px;
+       height: calc(315px*$aspectRatio);
     }
     @include laptop-sm {
-        width: 256px;
-        height: 169px;
-        transform: translate(96px, 29px);
+        width: 290px;
+        height: calc(290px*$aspectRatio);
+        transform: translate(75px, 21px);
     }
     @include tablet {
         width: 340px;
-        height: 228px;
+        height: calc(340px*$aspectRatio);
         transform: translate(107px, 29px);
     }
     @include tablet-sm {
@@ -66,7 +67,7 @@
     }
     @include mobile {
         width: 256px;
-        height: 169px;
+        height: calc(256px*$aspectRatio);
         transform: translate(61px, 29px);
     }
     @include mobile-sm {
@@ -115,5 +116,5 @@
 }
 
 .decoLine {
-    margin: 2em 0px;
+    margin: 20px 0px;
 }

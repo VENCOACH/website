@@ -13,7 +13,7 @@
 
 .b-AboutSectionLayout {
     @include laptop-sm {
-        height: 642px !important;
+        height: 768px !important;
     }
     @include tablet {
         height: 1250px !important;
@@ -110,6 +110,10 @@
 
 
 // InfoBlock sections overrides
+
+.infoBlock-container_aboutUs {
+    margin-bottom: 74px;
+}
 
 .infoBlock-paragraphs_WhyChooseUs {
     @include tablet {
