@@ -16,10 +16,10 @@
         height: 768px !important;
     }
     @include tablet {
-        height: 1250px !important;
+        height: 1500px !important;
     }
     @include mobile {
-        height: 1138px !important;
+        height: 1406px !important;
     }
 }
 
@@ -31,7 +31,10 @@
         height: 1326px !important;
     }
     @include tablet-sm {
-        height: 591px !important;
+        height: 701px !important;
+    }
+    @include mobile {
+        height: 625px !important;
     }
 }
 
@@ -43,10 +46,10 @@
         height: 906px !important;
     }
     @include tablet-sm {
-        height: 876px !important;
+        height: 722px !important;
     }
     @include mobile {
-        height: 790px !important;
+        height: 704px !important;
     }
 }
 
@@ -74,10 +77,10 @@
 }
 
 .e-TeamMembers {
-    margin-top: 285px;
+    margin-top: 144px;
     @include laptop-lg {
         height: 790px;
-        margin-top: 186px;
+        margin-top: 144px;
     }
     @include laptop-sm {
         height: 659px !important;
@@ -113,17 +116,45 @@
 
 .infoBlock-container_aboutUs {
     margin-bottom: 74px;
+    @include tablet {
+        margin-bottom: 78px;
+    }
+}
+
+.infoBlock-paragraphs_aboutUs {
+    @include tablet {
+        max-width: 358px;
+    }
+    @include tablet-sm {
+        p {
+            max-width: 394px;
+        }
+    }
+    @include mobile {
+        p {
+            max-width:  316px;
+        }
+    }
+    @include laptop-sm {
+        max-width: 441px;
+    }
 }
 
 .infoBlock-paragraphs_WhyChooseUs {
     @include tablet {
-        margin-right: 163px;
+        margin-right: 39px;
     }
     @include tablet-sm {
-        margin-right: 287px;
+        margin-right: 159px;
     }
     @include mobile {
         margin-right: 221px;
+    }
+    p {
+        font-size: 14px !important;
+        @include tablet-sm {
+            font-size: 13px !important;
+        }
     }
 }
 

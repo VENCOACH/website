@@ -18,13 +18,13 @@
             margin: 17px;
         }
         .circleDiagram {
-            transform: translate(218px, 164px);
+            transform: translate(136px, 88px);
             @include laptop-lg {
                 transform: translate(59px, 116px);
                 width: 233px;
             }
             @include laptop-sm {
-                transform: translate(53px, 128px);
+                transform: translate(37px, 48px);
                 width: 178px;
             }
             @include tablet {
@@ -61,20 +61,20 @@
         height: 413px;
         transform: translate(214px, -78px);
         @include tablet {
-            transform: translate(214px, 119px);
+            transform: translate(214px, 18px);
         }
         @include tablet-sm {
             width: 393px;
             height: 276.5px;
-            transform: translate(217px, 204px);
+            transform: translate(217px, 8px);
         }
         @include mobile {
             width: 333px;
             height: 234px;
-            transform: translate(240px, 95px);
+            transform: translate(240px, -6px);
         }
         @include mobile-sm {
-            transform: translate(214px, -78px);
+            transform: translate(214px, -151px);
         }
     }
 }

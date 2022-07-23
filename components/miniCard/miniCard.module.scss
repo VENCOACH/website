@@ -22,14 +22,17 @@
     p {
         font-family: $public-sans;
         font-weight: $light;
-        font-size: 11px;
+        font-size: 13px;
         text-align: justify;
         @include laptop-lg {
             max-width: 273px;
         }
         @include laptop-sm {
-            font-size: 10px;
-            max-width: 228px;
+            max-width: 224px;
+            font-size: 12px;
+        }
+        @include tablet {
+            max-width: 308px;
         }
         @include mobile {
             max-width: 234px;

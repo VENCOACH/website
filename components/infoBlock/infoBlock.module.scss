@@ -84,23 +84,23 @@
         color: $gray;
         font-family: $public-sans;
         font-weight: $medium;
-        font-size: 13px;
+        font-size: 14px;
         text-align: justify;
         @include laptop-lg {
             max-width: 350px;
         }
         @include laptop-sm {
             font-size: 0.8rem;
-            max-width: 280px;
+            max-width: 275px;
         }
         @include tablet {
             max-width: 475px;
         }
         @include tablet-sm {
-            max-width: 400px;
+            max-width: 387px;
         }
         @include mobile {
-            max-width: 319px;
+            max-width: 330px;
         }
         @include mobile-sm {
             max-width: 295px;

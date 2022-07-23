@@ -16,11 +16,11 @@
     }
     @include tablet {
         width: 234px;
-        height: 336px;
+        height: 352px;
     }
     @include tablet-sm {
         width: 366px;
-        height: 117px;
+        height: 144px;
         flex-direction: row;
         padding-left: 12px;
         padding-bottom: 12px;
@@ -51,7 +51,7 @@
             margin-left: 30px;
             text-align: center;
             @include tablet-sm {
-                font-size: 18px;
+                font-size: 11px;
             }
         }
         p {
