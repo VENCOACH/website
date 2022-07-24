@@ -32,12 +32,9 @@
             font-size: 38px;
         }
         @include mobile {
-            font-size: 33px;
+            font-size: 28px;
             text-align:center;
             margin: 30px 10px
-        }
-        @include mobile-sm {
-            font-size: 28px;
         }
     }
     span {
