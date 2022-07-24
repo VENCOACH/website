@@ -73,7 +73,9 @@ export default function OurServices({sectionContentData}) {
     <div className={container}>
         <InfoBlock titleText={sectionTitle} subtitleText={sectionSubtitle} _center={true} />
         <div className={cards}>
-            <ServiceCard url={url01} title={cardTitle01} paragraph={cardParagraph01}/>
+            <a href="https://mailchi.mp/1f0c6ad731fb/certificacioncoachingintegralinternacional" target={"__blank"} rel={"noreferrer"}>
+              <ServiceCard url={url01} title={cardTitle01} paragraph={cardParagraph01}/>
+            </a>
             <ServiceCard url={url02} title={cardTitle02} paragraph={cardParagraph02}/>
             <ServiceCard url={url03} title={cardTitle03} paragraph={cardParagraph03}/>
             {size.width > 570 && 

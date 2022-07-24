@@ -16,7 +16,10 @@
         height: 768px !important;
     }
     @include tablet {
-        height: 1500px !important;
+        height: 1560px !important;
+    }
+    @include tablet-sm {
+        height: 1490px !important;
     }
     @include mobile {
         height: 1406px !important;
@@ -70,9 +73,6 @@
     }
     @include mobile {
         height: 760px !important;
-    }
-    @include mobile-sm {
-        height: 850px !important;
     }
 }
 

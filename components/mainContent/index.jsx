@@ -1,4 +1,6 @@
 import styles from './mainContent.module.scss';
+import {Link} from 'react-scroll';
+import useWindowSize from '../../hooks/useWindowSize';
 
 export default function MainContent({sectionContentData}) {
 
@@ -9,8 +11,10 @@ export default function MainContent({sectionContentData}) {
       paragraph = {},
       ctaButttonText = {}
     } = sectionContentData.fields;
+
+    const size = useWindowSize();
   
-    const { container, btnPrimary, deco_moon, deco_moon__front, main_people } = styles;
+    const { ctaLink ,container, btnPrimary, deco_moon, deco_moon__front, main_people } = styles;
 
     return (
       <section className={container} id="navigationTop">
@@ -23,7 +27,16 @@ export default function MainContent({sectionContentData}) {
         <p>
           {paragraph}
         </p>
-        <button className={btnPrimary}>{ctaButttonText}</button>
+        <Link
+          to={'f-SpecializedInSectionLayout'}
+          offset={size.width > 790 ? -80 : -0}
+          duration={1000}
+          spy={true}
+          smooth={true}
+          className={ctaLink}
+        >
+          {ctaButttonText}
+        </Link>
         </section>
     );
 }

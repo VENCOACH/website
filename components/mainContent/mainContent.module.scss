@@ -154,7 +154,8 @@
             margin: 20px;
         }
     }
-    .btnPrimary {
+    
+    .ctaLink {
         z-index: 10;
         grid-column: 1/4;
         grid-row: 5;
@@ -167,6 +168,9 @@
         font-weight: $semibold;
         font-size: 1.2rem;
         border:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         transition: all 0.5s ease;
         &:hover{
@@ -190,4 +194,5 @@
             transform: translate(13px, 22px);
         }
     }
+    
 }

@@ -1,9 +1,11 @@
 import styles from './navMenu.module.scss';
 import {Link} from 'react-scroll';
 import SocialIcons from '../socialIcons';
+import useWindowSize from '../../hooks/useWindowSize';
 
 export default function NavMenu({data}) {
     const {navText, container, titleText, content, linkItem, noBullets, listMenu, listItem, icon } = styles;
+    const size = useWindowSize();
     return (
       <div
         className={container}
@@ -23,7 +25,7 @@ export default function NavMenu({data}) {
                     to={link.href || "#"}
                     spy={true}
                     smooth={true}
-                    offset={parseInt(link.offset)}
+                    offset={size.width < 570 ? parseInt(link.offset?.mobile) : parseInt(link.offset?.desktop)}
                     duration={parseInt(link.duration)}
                     className={linkItem}
                   >

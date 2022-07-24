@@ -18,19 +18,28 @@
                 {
                     "linkTitle": "Acerca de Nosotros",
                     "href": "b-AboutSectionLayout",
-                    "offset":"-100",
+                    "offset": {
+                        "desktop": "-100",
+                        "mobile": "-0"
+                    },
                     "duration":"900"
                 },
                 {
                     "linkTitle": "Nuestros Servicios",
                     "href": "c-OurServicesSectionLayout",
-                    "offset":"-110",
+                    "offset": {
+                        "desktop": "-120",
+                        "mobile": "-0"
+                    },
                     "duration":"800"
                 },
                 {
                     "linkTitle": "Porqué escogernos",
                     "href": "d-WhyChooseUsSectionLayout",
-                    "offset":"-120",
+                    "offset": {
+                        "desktop": "-120",
+                        "mobile": "50"
+                    },
                     "duration":"700"
                 },
                 {
