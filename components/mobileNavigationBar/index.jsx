@@ -1,6 +1,8 @@
 import { slide as Menu } from 'react-burger-menu';
 import styles from './mobileNavigationBar.module.scss';
 import useWindowSize from '../../hooks/useWindowSize';
+import {Link} from 'react-scroll';
+import navMenuData from '../../data/navMenuData.json';
 
 export default function MobileNavigationBar() {
     const size = useWindowSize();
@@ -53,18 +55,69 @@ export default function MobileNavigationBar() {
           background: 'rgba(0, 0, 0, 0.3)'
         }
       }
+      const links = navMenuData.mobileLinks;
   return (
     <div className={contentBox}>
       <img  className={logo} src="img/logo.png" alt="logo" />
       <Menu styles={menuStyles} right noOverlay width={"50vw"} >
-        <u className={menuItems}>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Logros</a></li>
-          <li><a href="#">Equipo</a></li>
-          <li><a href="#">Testimonios</a></li>
-          <li><a href="#">Contactar</a></li>
-        </u>
+        <ul className={menuItems}>
+          <li>
+          { links &&  
+            <Link
+              to={links[0].href}
+              spy={true}
+              smooth={true}
+              offset={parseInt(links[0].offset)}
+              duration={parseInt(links[0].duration)}
+            >
+                {links[0].linkTitle}
+            </Link>}
+          </li>
+          <li>
+            <Link
+              to={links[1].href}
+              spy={true}
+              smooth={true}
+              offset={parseInt(links[1].offset)}
+              duration={parseInt(links[1].duration)}
+            >
+                {links[1].linkTitle}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={links[2].href}
+              spy={true}
+              smooth={true}
+              offset={parseInt(links[2].offset)}
+              duration={parseInt(links[2].duration)}
+            >
+                {links[2].linkTitle}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={links[3].href}
+              spy={true}
+              smooth={true}
+              offset={parseInt(links[3].offset)}
+              duration={parseInt(links[3].duration)}
+            >
+                {links[3].linkTitle}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={links[4].href}
+              spy={true}
+              smooth={true}
+              offset={parseInt(links[4].offset)}
+              duration={parseInt(links[4].duration)}
+            >
+                {links[4].linkTitle}
+            </Link>
+          </li>
+        </ul>
       </Menu>
     </div>
   );
