@@ -25,6 +25,8 @@ export default class ContentSlot {
                 return <SpecializedIn sectionContentData={sectionContentData} />
             case 'g-testimonials':
                 return <Testimonials sectionContentData={sectionContentData} />
+            case 'servicePageTemplate':
+                return
             default: 
                 throw new Error(` 📛 THE COMPONENT "${contentId}" DOES NOT EXIST, PLEASE CHECK 😓`); 
         }

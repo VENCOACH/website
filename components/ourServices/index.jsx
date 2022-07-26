@@ -2,6 +2,7 @@ import styles from './ourServices.module.scss';
 import InfoBlock from '../infoBlock';
 import ServiceCard from '../serviceCard';
 import useWindowSize from '../../hooks/useWindowSize';
+import Link from 'next/link';
 
 export default function OurServices({sectionContentData}) {
 
@@ -76,7 +77,11 @@ export default function OurServices({sectionContentData}) {
             <a href="https://mailchi.mp/1f0c6ad731fb/certificacioncoachingintegralinternacional" target={"__blank"} rel={"noreferrer"}>
               <ServiceCard url={url01} title={cardTitle01} paragraph={cardParagraph01}/>
             </a>
-            <ServiceCard url={url02} title={cardTitle02} paragraph={cardParagraph02}/>
+            <Link href="/servicios">
+              <a>
+                <ServiceCard url={url02} title={cardTitle02} paragraph={cardParagraph02}/>
+              </a>
+            </Link>
             <ServiceCard url={url03} title={cardTitle03} paragraph={cardParagraph03}/>
             {size.width > 570 && 
             <>

@@ -1,8 +1,12 @@
 import { slide as Menu } from 'react-burger-menu';
 import styles from './mobileNavigationBar.module.scss';
 import useWindowSize from '../../hooks/useWindowSize';
-import {Link} from 'react-scroll';
+import {Link as Scroll, animateScroll} from 'react-scroll';
 import navMenuData from '../../data/navMenuData.json';
+import Link from 'next/link';
+import {useEffect, useCallback,useState } from 'react';
+
+
 
 export default function MobileNavigationBar() {
     const size = useWindowSize();
@@ -56,14 +60,59 @@ export default function MobileNavigationBar() {
         }
       }
       const links = navMenuData.mobileLinks;
+
+      let pageLocation;
+
+      useEffect(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        pageLocation = window.location.href;
+        if(pageLocation.includes("servicios")) {
+          setOnServicePage(true);
+        } else {
+          setOnServicePage(false);
+        }
+      })
+
+    const [onServicePage, setOnServicePage] = useState(false)
+
+
+      const handleNavigationScroll =(e)=> {
+            
+        switch (e.target.id) {
+          case "navigationTop":
+            animateScroll.scrollToTop();
+            break;
+          case "b-AboutSectionLayout":
+            animateScroll.scrollTo('700');
+            break;
+          case "c-OurServicesSectionLayout":
+            animateScroll.scrollTo('2100');
+            break;
+          case "d-WhyChooseUsSectionLayout":
+            animateScroll.scrollTo('2850');
+            break;
+          case "e-TeamMembers":
+            animateScroll.scrollTo('3600');
+            break;
+          case "f-SpecializedInSectionLayout":
+            animateScroll.scrollTo('4500');
+            break;
+          case "g-testimonials":
+            animateScroll.scrollTo('5000');
+            break;
+        }
+      }
+      
+        
   return (
     <div className={contentBox}>
       <img  className={logo} src="img/logo.png" alt="logo" />
       <Menu styles={menuStyles} right noOverlay width={"50vw"} >
         <ul className={menuItems}>
-          <li>
-          { links &&  
-            <Link
+        { links && !onServicePage ?
+          <>
+            <li>
+            <Scroll
               to={links[0].href}
               spy={true}
               smooth={true}
@@ -71,10 +120,10 @@ export default function MobileNavigationBar() {
               duration={parseInt(links[0].duration)}
             >
                 {links[0].linkTitle}
-            </Link>}
+            </Scroll>
           </li>
           <li>
-            <Link
+            <Scroll
               to={links[1].href}
               spy={true}
               smooth={true}
@@ -82,10 +131,10 @@ export default function MobileNavigationBar() {
               duration={parseInt(links[1].duration)}
             >
                 {links[1].linkTitle}
-            </Link>
+            </Scroll>
           </li>
           <li>
-            <Link
+            <Scroll
               to={links[2].href}
               spy={true}
               smooth={true}
@@ -93,10 +142,10 @@ export default function MobileNavigationBar() {
               duration={parseInt(links[2].duration)}
             >
                 {links[2].linkTitle}
-            </Link>
+            </Scroll>
           </li>
           <li>
-            <Link
+            <Scroll
               to={links[3].href}
               spy={true}
               smooth={true}
@@ -104,10 +153,10 @@ export default function MobileNavigationBar() {
               duration={parseInt(links[3].duration)}
             >
                 {links[3].linkTitle}
-            </Link>
+            </Scroll>
           </li>
           <li>
-            <Link
+            <Scroll
               to={links[4].href}
               spy={true}
               smooth={true}
@@ -115,8 +164,66 @@ export default function MobileNavigationBar() {
               duration={parseInt(links[4].duration)}
             >
                 {links[4].linkTitle}
-            </Link>
+            </Scroll>
           </li>
+          <li>
+            <Scroll
+              to={links[5].href}
+              spy={true}
+              smooth={true}
+              offset={parseInt(links[5].offset)}
+              duration={parseInt(links[5].duration)}
+            >
+                {links[5].linkTitle}
+            </Scroll>
+          </li>
+          </>
+          :
+          <>
+            <li>
+              <Link href="/">
+                <a onClick={(e)=>handleNavigationScroll(e)} id={links[0].href}>
+                  {links[0].linkTitle}
+                </a>
+            </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a onClick={(e)=>handleNavigationScroll(e)} id={links[1].href}>
+                  {links[1].linkTitle}
+                </a>
+               </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a onClick={(e)=>handleNavigationScroll(e)} id={links[2].href}>
+                  {links[2].linkTitle}
+                </a>
+               </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a onClick={(e)=>handleNavigationScroll(e)} id={links[3].href}>
+                  {links[3].linkTitle}
+                </a>
+               </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a onClick={(e)=>handleNavigationScroll(e)} id={links[4].href}>
+                  {links[4].linkTitle}
+                </a>
+               </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a onClick={(e)=>handleNavigationScroll(e)} id={links[5].href}>
+                  {links[5].linkTitle}
+                </a>
+               </Link>
+            </li>
+          </>
+        }
         </ul>
       </Menu>
     </div>
