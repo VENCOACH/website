@@ -126,7 +126,7 @@ export default function NavigationBar({data}) {
       </section>
       <section className={`${bottomSection} ${hideContactBar ? top : ""}`}>
         <div className={contentBox}>
-          <figure>
+          <figure style={{cursor:"pointer"}} onClick={()=>{animateScroll.scrollToTop()}}>
             <img src="img/logo.png" alt="Vencoach Logo" />
           </figure>
           <ul>
