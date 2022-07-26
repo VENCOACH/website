@@ -33,13 +33,17 @@ export default function WhyChooseUs({sectionContentData}) {
             paragraphText_second={paragraphSecond}
             fromComponent={'WhyChooseUs'}
             />
-            <img className={circleDiagram} src="img/ciclo_diagrama.png" alt="" />
+            <img className={circleDiagram} src="img/cursos-coaching.png" alt="cursos-coaching" />
         </aside>
         <aside>
             <div className={rightImage}>
             {size.width > 770 ?
-                <Image src={`https:${rightImg_url}`} layout="fill" /> :
-                <img className={imageSmallScreens} src='img/escaleras_horizontal.jpg' /> //connect to contentful and make a next component image
+                <Image 
+                    src={`https:${rightImg_url}`} 
+                    layout="fill"
+                    alt="coaching-integral"
+                /> :
+                <img alt="coaching-integral" className={imageSmallScreens} src='img/profesionales-coaching.jpg' /> //connect to contentful and make a next component image
             }
             </div>
         </aside>

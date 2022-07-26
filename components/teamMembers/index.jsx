@@ -44,6 +44,7 @@ export default function TeamMembers({sectionContentData}) {
           dots
           DefaultSlidesToShow={3}
           carrouselResponsiveSettings={carrouselResponsiveSettings}
+          fromComponent="teamMembers"
         />
     </div>
   )

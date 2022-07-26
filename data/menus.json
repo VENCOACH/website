@@ -120,7 +120,7 @@
                     "lineHeight": "34px"
                 },
                 "container": {
-                    "max-width": "350px"
+                    "maxWidth": "350px"
                 }
             }
         }

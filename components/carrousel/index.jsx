@@ -42,11 +42,26 @@ export default class Carrousel extends Component {
     return (
       <>
         <Slider {...settings} ref={c => (this.slider = c)}>
-          {this.props.images.map((each, index) => (
-            <div key={index} className={this.props.imageContainer}>
-              <Image src={`https:${each.fields.file.url}`} layout="fill"  alt="testimonies" priority/>
-            </div>
-          ))}
+          {this.props.fromComponent === "teamMembers" ? this.props.images.map((each, index) => (
+            <a 
+              key={index} 
+              className={this.props.imageContainer}
+              href = {each.fields.description}
+              target="_blank"
+              rel='noreferrer'
+            >
+              <Image src={`https:${each.fields.file.url}`} layout="fill"  alt={`coach-profesional-${each.fields.title.substring(2)}`} priority/>
+            </a>
+          )) :
+            this.props.images.map((each, index) => (
+              <div 
+                key={index} 
+                className={this.props.imageContainer}
+              >
+                <Image src={`https:${each.fields.file.url}`} layout="fill"  alt="certificacion-coaching-venezuela" priority/>
+              </div>
+            ))
+          }
         </Slider>
         
       </>

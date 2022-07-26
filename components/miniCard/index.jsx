@@ -7,7 +7,7 @@ export default function MiniCard({cardTitle, cardParagraph, imgSrc}) {
   return (
     <div className={container}>
       <div className={leftSide}>
-        <img src={imgSrc} alt="" />
+        <img src={imgSrc} alt="coaching-integral" />
       </div>
       <div className={rightSide}>
         <h4>{cardTitle}</h4>

@@ -12,6 +12,7 @@ export default function ServiceCard({url, title,  paragraph}) {
                 src={`https:${url}`}
                 layout='fill'
                 quality={100}
+                alt="servicio-coaching"
             />
         </div>
         <div className={text}>

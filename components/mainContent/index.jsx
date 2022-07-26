@@ -23,7 +23,7 @@ export default function MainContent({sectionContentData}) {
         </h1>
         <img className={deco_moon} src="img/media-luna.png" alt=""/>
         <img className={deco_moon__front} src="img/decorative-halfmoon-front.png" alt="" />
-        <img className={main_people} src="img/main-finish.png" alt="people" />
+        <img className={main_people} src="img/vencoach.png" alt="people" />
         <p>
           {paragraph}
         </p>

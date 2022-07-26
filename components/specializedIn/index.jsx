@@ -30,7 +30,7 @@ export default function SpecializedIn({sectionContentData}) {
                     <Image 
                         src={`https:${leftImg_url}`} 
                         layout="fill"
-                        alt="coaches talking"
+                        alt="coaching-empresarial"
                     />
                 </div>
             </aside>
@@ -44,8 +44,8 @@ export default function SpecializedIn({sectionContentData}) {
                 />
                 {size.width > 990 && 
                     <>
-                        <img className={card01} src="img/specializedCard01.png"></img>
-                        <img className={card02} src="img/specializedCard02.png"></img>
+                        <img className={card01} src="img/coaching-eficaz.png" alt="coaching-eficaz"></img>
+                        <img className={card02} src="img/especialistas-en-coaching.png" alt="especialistas-en-coaching"></img>
                     </>
                 }
             </aside>

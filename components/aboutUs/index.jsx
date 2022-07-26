@@ -50,17 +50,17 @@ export default function AboutUs({sectionContentData}) {
               <Image
                   src={`https:${url2}`}
                   layout='fill'
-                  alt="coaches"
+                  alt="coaches-formacion"
               />
           </div>
           <div className={image01}>
             <Image
                 src={`https:${url}`}
                 layout='fill'
-                alt="coaches meeting"
+                alt="coaches-profesionales"
             />
           </div>
-          <img src="img/card-experiencie-number.png" alt="years of experience" className={experience} />
+          <img src="img/coaching-con-experiencia.png" alt="mas de 20 años de experiencia en coaching" className={experience} />
         </aside>
     </div>
   )

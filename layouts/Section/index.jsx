@@ -37,6 +37,7 @@ export default function Section({ sectionData }) {
           objectPosition='center'
           quality={100}
           priority
+          alt=""
           />
         }
         <div className={contentBox}>
