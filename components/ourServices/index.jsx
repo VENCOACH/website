@@ -3,10 +3,12 @@ import InfoBlock from '../infoBlock';
 import ServiceCard from '../serviceCard';
 import useWindowSize from '../../hooks/useWindowSize';
 import Link from 'next/link';
+import {useContext} from 'react';
+import { GlobalContext } from '../../pages/_app';
 
 export default function OurServices({sectionContentData}) {
 
-
+  const {setClickedServiceId} = useContext(GlobalContext);
   const {
     sectionTitle,
     sectionSubtitle,
@@ -77,11 +79,13 @@ export default function OurServices({sectionContentData}) {
             <a href="https://mailchi.mp/1f0c6ad731fb/certificacioncoachingintegralinternacional" target={"__blank"} rel={"noreferrer"}>
               <ServiceCard url={url01} title={cardTitle01} paragraph={cardParagraph01}/>
             </a>
-            <Link href="/servicios">
+
+            <Link href="/servicios">    
               <a>
                 <ServiceCard url={url02} title={cardTitle02} paragraph={cardParagraph02}/>
               </a>
             </Link>
+
             <ServiceCard url={url03} title={cardTitle03} paragraph={cardParagraph03}/>
             {size.width > 570 && 
             <>

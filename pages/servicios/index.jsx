@@ -4,9 +4,13 @@ import styles from './servicios.module.scss';
 import Image from 'next/image';
 import useWindowSize from '../../hooks/useWindowSize';
 import InfoBlock from '../../components/infoBlock';
+import { useContext } from 'react';
+import {GlobalContext} from '../../pages/_app';
+import { useRouter } from 'next/router';
 
 export default function ServiceDetails({ data }) {
-
+  const {clikedServiceId} = useContext(GlobalContext);
+  const router = useRouter();
   const {
     rightImage: {
         fields: {

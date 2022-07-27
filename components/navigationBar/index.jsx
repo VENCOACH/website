@@ -145,7 +145,7 @@ export default function NavigationBar({data}) {
               </li> 
               :
               <li key={index}>
-                <Link  href="/">
+                <Link  href="/" scroll={false}>
                   <a onClick={(e)=>handleNavigationScroll(e)} id={link.href}>
                     {link.linkTitle}
                   </a>
