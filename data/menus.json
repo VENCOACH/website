@@ -1,0 +1,128 @@
+{
+    "footer": [
+        {
+            "title":"Sobre Nosotros",
+            "customBullets":"true",
+            "text":"lorem ipsim dolure, paratar dumalgono tereca, il caste do nosotLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ultric.",
+            "socialIcons": "true"
+        },
+        {
+            "title":"Secciones",
+            "links":[
+                {
+                    "linkTitle": "Home",
+                    "href":"navigationTop",
+                    "offset":"-200",
+                    "duration":"1000"
+                },
+                {
+                    "linkTitle": "Acerca de Nosotros",
+                    "href": "b-AboutSectionLayout",
+                    "offset": {
+                        "desktop": "-100",
+                        "mobile": "-0"
+                    },
+                    "duration":"900"
+                },
+                {
+                    "linkTitle": "Nuestros Servicios",
+                    "href": "c-OurServicesSectionLayout",
+                    "offset": {
+                        "desktop": "-120",
+                        "mobile": "-0"
+                    },
+                    "duration":"800"
+                },
+                {
+                    "linkTitle": "Porqué escogernos",
+                    "href": "d-WhyChooseUsSectionLayout",
+                    "offset": {
+                        "desktop": "-120",
+                        "mobile": "50"
+                    },
+                    "duration":"700"
+                },
+                {
+                    "linkTitle": "Equipo",
+                    "href" : "e-TeamMembers",
+                    "offset":"-150",
+                    "duration":"600"
+                },
+                {
+                    "linkTitle": "Especializados en",
+                    "href": "f-SpecializedInSectionLayout",
+                    "offset":"-50",
+                    "duration":"600"
+                },
+                {
+                    "linkTitle": "Testimonios",
+                    "href": "g-testimonials",
+                    "offset":"-80",
+                    "duration":"400"
+                }
+            ]
+        },
+        {
+            "title":"Servicios",
+            "links":[
+                {
+                    "linkTitle": "Coaching empresarial"
+                },
+                {
+                    "linkTitle": "Tutorías"
+                },
+                {
+                    "linkTitle": "Consultoría"
+                },
+                {
+                    "linkTitle": "Personalización"
+                }
+            ]
+        },
+        {
+            "title": "Links",
+            "links": [
+                {
+                    "linkTitle": "Trabaja con Nosotros"
+                },
+                {
+                    "linkTitle": "Coaching en Venezuela"
+                },
+                {
+                    "linkTitle": "Política de privacidad"
+                },
+                {
+                    "linkTitle": "Socios"
+                }
+            ]
+        },
+        {
+            "title": "Contactos",
+            "customBullets":"true",
+            "links": [
+                {
+                    "linkTitle": "Maracaibo, Venezuela",
+                    "iconName": "location.png",
+                    "size": "27"
+                },
+                {
+                    "linkTitle": "...",
+                    "iconName": "phone.png"
+                },
+                {
+                    "linkTitle": "contacto@vencoach.org",
+                    "iconName": "mail.png"
+                }
+            ],
+            "customStyles": {
+                "ul": {
+                    "paddingLeft": "0px",
+                    "lineHeight": "34px"
+                },
+                "container": {
+                    "maxWidth": "350px"
+                }
+            }
+        }
+    ]
+}

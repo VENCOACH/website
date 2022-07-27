@@ -1,0 +1,64 @@
+{
+    "links": [
+        {
+            "linkTitle": "Nosotros",
+            "href": "b-AboutSectionLayout",
+            "offset": "-50"
+        },
+        {
+            "linkTitle": "Servicios",
+            "href": "c-OurServicesSectionLayout",
+            "offset": "-100"
+        },
+        {
+            "linkTitle": "Logros",
+            "href": "d-WhyChooseUsSectionLayout",
+            "offset": "-100"
+        },
+        {
+            "linkTitle": "Equipo",
+            "href" : "e-TeamMembers",
+            "offset": "-100"
+        },
+        {
+            "linkTitle": "Testimonios",
+            "href": "g-testimonials",
+            "offset": "-80",
+            "duration": "800"
+        }
+    ],
+    "mobileLinks" : [
+        {
+            "linkTitle": "Home",
+            "href":"navigationTop",
+            "offset": "-200",
+            "duration":"1000"
+        },
+        {
+            "linkTitle": "Nosotros",
+            "href": "b-AboutSectionLayout",
+            "offset": "20"
+        },
+        {
+            "linkTitle": "Servicios",
+            "href": "c-OurServicesSectionLayout",
+            "offset": "20"
+        },
+        {
+            "linkTitle": "Logros",
+            "href": "d-WhyChooseUsSectionLayout",
+            "offset": "50"
+        },
+        {
+            "linkTitle": "Equipo",
+            "href" : "e-TeamMembers",
+            "offset": "0"
+        },
+        {
+            "linkTitle": "Testimonios",
+            "href": "g-testimonials",
+            "offset": "-80",
+            "duration": "800"
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+.container {
+    height: 272px;
+    width: 515px;
+    margin-bottom: 5em;
+    @include laptop-sm {
+        margin-bottom: 3em;
+    }
+}
+
+.centerContainer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    @include laptop-sm {
+        height: 22px;
+
+    }
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    img {
+        width: 68px;
+        height: 10px;
+    }
+    h3 {
+        margin-left: 1em;
+        font-family: $sansation;
+        color: $orange;
+        text-transform: uppercase;
+        @include laptop-sm {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.centerSubtitle {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.title {
+    margin: 1em 0px 1.5em 0px;
+    font-family: $sansation;
+    color: $blue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    @include laptop-lg{
+        font-size: 1.5rem;
+        max-width: 400px
+    }
+    @include laptop-sm {
+        font-size: 1.3rem;
+        max-width: 308px;
+    }
+    @include tablet {
+        font-size: 1.7rem;
+        max-width: 488px;
+    }
+    @include mobile {
+        font-size: 1.3rem;
+        max-width: 308px;
+    }
+}
+
+.centerTitle {
+    @include laptop-lg {
+        max-width: 100vw;
+    }
+    @include tablet-sm {
+        font-size: 20px;
+    }
+
+}
+
+.paragraphWrapper{
+    p {
+        margin-bottom: 2em;
+        color: $gray;
+        font-family: $public-sans;
+        font-weight: $medium;
+        font-size: 14px;
+        text-align: justify;
+        @include laptop-lg {
+            max-width: 350px;
+        }
+        @include laptop-sm {
+            font-size: 0.8rem;
+            max-width: 275px;
+        }
+        @include tablet {
+            max-width: 475px;
+        }
+        @include tablet-sm {
+            max-width: 387px;
+        }
+        @include mobile {
+            max-width: 330px;
+        }
+        @include mobile-sm {
+            max-width: 295px;
+        }
+    }
+
+}
+

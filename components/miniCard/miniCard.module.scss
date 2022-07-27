@@ -1,0 +1,48 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+.container {
+    display: flex;
+}
+
+.leftSide {
+    place-self: center;
+    img{
+        width: 60px;
+    }
+}
+
+.rightSide {
+    margin-left: 20px;
+    max-width: 425px;
+    p, h4 {
+        margin:0px;
+    }
+
+    p {
+        font-family: $public-sans;
+        font-weight: $light;
+        font-size: 13px;
+        text-align: justify;
+        @include laptop-lg {
+            max-width: 273px;
+        }
+        @include laptop-sm {
+            max-width: 224px;
+            font-size: 12px;
+        }
+        @include tablet {
+            max-width: 308px;
+        }
+        @include mobile {
+            max-width: 234px;
+        }
+    }
+
+    h4 {
+        margin-bottom: 5px;
+        font-family: $sansation;
+        color: $blue;
+        font-size: 1.1rem;
+    }
+}

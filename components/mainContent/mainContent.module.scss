@@ -1,0 +1,198 @@
+@import '../../sass/_var';
+@import '../../sass/_breakpoints';
+
+.container {
+    height: 100%;
+    display: grid; 
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+    overflow: hidden;
+    z-index: -1;
+    h1 {
+        text-transform: uppercase;
+        font-family: $dm-sans;
+        font-weight: $bold;
+        font-size: 60px;
+        color: $blue;
+        margin-top: 67px;
+        grid-column: 1 / 8;
+        grid-row: 1/ 6;
+        @include laptop-lg {
+            font-size: 50px;
+            grid-column: 1 / 11;
+        }
+        @include laptop-sm {
+            font-size: 45px;
+        }
+        @include tablet {
+            grid-column: 1/13;
+            
+        }
+        @include tablet-sm {
+            font-size: 38px;
+        }
+        @include mobile {
+            font-size: 28px;
+            text-align:center;
+            margin: 30px 10px
+        }
+    }
+    span {
+        color: $orange;
+    }
+ 
+    .main_people {
+        grid-row: 1/6;
+        max-height: 827px;
+        transform: translate(-164px, 5px);
+        grid-column: 8/12;
+        @include laptop-lg {
+            max-height: 650px;
+            transform: translate(-191px, 132px);
+        }
+        @include laptop-sm {
+            max-height: 549px;
+            transform: translate(-137px, 223px);
+            grid-column: 7/12;
+        }
+        @include tablet {
+            transform: translate(-167px, 250px);
+            max-height: 511px;
+        }
+        @include tablet-sm {
+            max-height: 464px;
+            transform: translate(-124px, 281px);
+            grid-column: 5/12;
+        }
+        @include mobile {
+            max-height: 360px;
+            transform: translate(-97px, 208px);
+            grid-column: 5/12;
+        }
+    }
+    .deco_moon {
+        max-height: 602px;
+        mix-blend-mode: multiply;
+        grid-row: 2/6 ;
+        grid-column: 6/12;
+        transform: translate(-107px, 0px);
+        @include laptop-lg {
+            grid-column: 5/12;
+        }
+        @include laptop-sm {
+            grid-column: 4/12;
+        }
+        @include tablet {
+            grid-column: 2/12;
+            grid-row: 3/6;
+            max-height: 523px;
+            transform: translate(-47px, 45px);
+        }
+        @include mobile {
+            grid-column: 2/12;
+            grid-row: 3/6;
+            transform: rotate(46deg);
+            transform: translate(-164px, 104px) rotate(6deg);
+        }
+        &__front {
+            height: 269px;
+            grid-row: 1/6;
+            grid-column: 9/12;
+            transform: translate(-385px, 434px) rotate(0deg);
+            @include laptop-sm {
+                height: 348px;
+                transform: translate(-384px, 372px) rotate(332deg);
+            }
+            @include tablet {
+                transform: translate(-388px, 367px) rotate(342deg);
+            }
+            @include tablet-sm {
+                height: 246px;
+                transform: translate(-73px, 285px) rotate(36deg);
+            }
+            @include mobile{
+                height: 185px;
+                transform: translate(-262px, 344px) rotate(355deg);
+            }
+        }
+    }
+    p {
+        grid-column: 1/4;
+        grid-row: 4;
+        font-size: 1.25rem;
+        font-family: $nunito;
+        font-weight: $semibold;
+        transform: translateY(-60px);
+        @include laptop-lg {
+            transform: translateY(-107px);
+            font-size: 1.1rem;
+            grid-column: 1/5;
+        }
+        @include laptop-sm {
+            grid-column: 1/6;
+        }
+        @include tablet {
+            grid-row: 3;
+            transform: translateY(-36px);
+            font-size: 14px;
+        }
+        @include tablet-md {
+            transform: translateY(-15px);
+        }
+        @include tablet-sm {
+            grid-column: 1/10;
+            transform: translateY(-34px);
+        }
+        @include mobile {
+            font-size: 0.8rem;
+            text-align: center;
+            grid-column: 1/13;
+            transform: translateY(-48px);
+            margin: 54px;
+        }
+        @include mobile-sm {
+            margin: 20px;
+        }
+    }
+    
+    .ctaLink {
+        z-index: 10;
+        grid-column: 1/4;
+        grid-row: 5;
+        width: 215px;
+        height: 54px;
+        color: $white;
+        background-color: $yellow;
+        border-radius: 1em;
+        font-family: $nunito;
+        font-weight: $semibold;
+        font-size: 1.2rem;
+        border:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover{
+            background-color: $blue;
+        }
+        @include tablet {
+            width: 126px;
+            font-size: 14px;
+            grid-column: 10/12;
+            grid-row: 3;
+            background-color: $blue;
+        }
+        @include tablet-sm {
+            width: 108px;
+        }
+        @include mobile {
+            margin: auto;
+            height: 46px;
+            font-size: 14px;
+            grid-column: 1/12;
+            transform: translate(13px, 22px);
+        }
+    }
+    
+}

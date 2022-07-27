@@ -1,0 +1,46 @@
+@import '../../sass/breakpoints';
+
+.bannerNumbers {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 3278px);
+    z-index: 10;
+    @include laptop-lg {
+        width: 880px;
+        transform: translate(-50%, 3584px);
+    }
+    @include laptop-sm {
+        width: 805px;
+        transform: translate(-50%, 3411px);
+    }
+    @include tablet {
+        display: none;
+    }
+    &_vertical {
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 3278px);
+        z-index: 10;
+        @include tablet {
+            display: block;
+            width: 192px;
+            left: 77%;
+            transform: translate(-50%, 3556px);
+        }
+        @include tablet-md {
+            left: 83%;
+        }
+        @include tablet-sm {
+            left: 78%;
+            transform: translate(-64%, 2927px);
+            width: 176px;
+        }
+        @include tablet-xsm {
+            left: 80%;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+}

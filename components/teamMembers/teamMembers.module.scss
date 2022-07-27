@@ -1,0 +1,22 @@
+@import '../../sass/breakpoints';
+
+
+
+.teamImage {
+    position: relative;
+    width: 445px !important;
+    min-height: 581px;
+    @include laptop-sm {
+        width: 349px !important;
+        min-height: 457px;
+    }
+    @include tablet {
+        width: 279px !important;
+        min-height: 365.5px;
+
+    }
+    @include tablet-sm {
+        width: 359px !important;
+        min-height: 470.29px;
+    }
+}

@@ -1,0 +1,55 @@
+@import '../../sass/breakpoints';
+
+
+
+.testimonialCardImage {
+    position: relative;
+    width: 578px !important;
+    min-height: 357px;
+    @include laptop-lg {
+        width: 430px !important;
+        min-height:265.6px;
+    }
+    @include laptop-sm {
+        width: 578px !important;
+        min-height: 357px;
+    }
+    @include tablet {
+        width: 430px !important;
+        min-height: 265.6px;
+    }
+    @include tablet-sm {
+        width: 280px !important;
+        min-height:172.94px;
+    }
+}
+
+
+.arrowButton {
+    cursor: pointer;
+    width: 65px;
+    height: 33px;
+    @include laptop-lg {
+        width: 45px; 
+        height: 22.9px;
+    }
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrowWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 54px;
+    width: 150px;
+    @include laptop-lg{
+        width: 105px;
+    }
+    @include tablet {
+        display: none;
+    }
+}

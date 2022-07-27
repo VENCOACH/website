@@ -1,0 +1,40 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+// Generals for all sections: 
+    
+.backgroundImg {
+    position: relative;
+    overflow: hidden;
+    filter: opacity(100%);
+    width: 100vw;
+    margin-bottom: 60px;
+    @include ultraWideScreen {
+        max-width: 2560px;
+    }
+}     
+.contentBox {
+    position: relative;
+    width: 90vw;
+    max-width: 1300px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    @include laptop-lg {
+        max-width: 960px
+    }
+    @include laptop-sm {
+        max-width: 720px
+    }
+    @include tablet {
+        max-width: 560px
+    }
+    @include tablet-sm {
+        max-width: 430px
+    }
+    @include mobile {
+        width: 100vw
+    }
+}
+
+// Particular for each sections: 

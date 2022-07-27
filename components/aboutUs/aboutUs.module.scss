@@ -1,0 +1,120 @@
+@import '../../sass/breakpoints';
+
+
+.container {
+    height: 100%;
+    display: grid; 
+    grid-template-columns: repeat(12,1fr);
+    overflow: hidden;
+    z-index: -1;
+    @include tablet {
+        display: block;
+        padding-top: 5px;
+    }
+}
+
+.rightAside {
+    grid-column: 7/13;
+    grid-row: 1/4;
+    transform: translate(0px, 39px);
+    @include laptop-lg {
+        transform: translate(96px, 39px);
+    }
+    @include laptop-sm {
+        transform: translate(42px, 39px);
+    }
+    @include tablet-sm {
+        transform: translate(4px, 39px);
+    }
+    @include mobile {
+        transform: translate(0px, 39px);
+        margin-left: 30px;
+    }
+    @include mobile-sm {
+        transform: translate(-19px, 39px);
+    }
+}
+
+.leftAside {
+    grid-row: 1/6;
+    grid-column: 1/7;
+}
+
+.image01{
+    $aspectRatio: 1.1633;
+    position: relative;
+    width: 350px;
+    height: calc(350px*$aspectRatio);
+    // border: solid white 7px;
+    border-radius: 12px;
+    transform: translate(222px, -31px);
+    @include laptop-lg{
+       width: 315px;
+       height: calc(315px*$aspectRatio);
+    }
+    @include laptop-sm {
+        width: 290px;
+        height: calc(290px*$aspectRatio);
+        transform: translate(75px, 21px);
+    }
+    @include tablet {
+        width: 340px;
+        height: calc(340px*$aspectRatio);
+        transform: translate(107px, 29px);
+    }
+    @include tablet-sm {
+        transform: translate(43px, 29px);
+    }
+    @include mobile {
+        width: 256px;
+        height: calc(256px*$aspectRatio);
+        transform: translate(61px, 29px);
+    }
+    @include mobile-sm {
+        transform: translate(36px, 29px);
+    }
+}
+
+.image02{
+    position: relative;
+    width: 436px;
+    height: 287px;
+    transform: translate(71px, 10px);
+    @include laptop-sm{
+        width: 300px;
+        height: 197.47px;
+    }
+    @include tablet {
+        width: 418px;
+        height: 275.14px;
+    }
+    @include tablet-sm {
+        width: 330px;
+        height: 217.2px;
+        transform: translate(44px, 10px);
+    }
+    @include mobile {
+        transform: translate(37px, 10px);
+    }
+    @include mobile-sm {
+        width: 300px;
+        height: 197.45px;
+        transform: translate(9px, 10px);
+    }
+}
+
+.circle {
+    transform: translate(0px, 67px);
+}
+
+.experience {
+    transform: translate(0px, -265px);
+    @include laptop-sm{
+        width: 158px;
+        transform: translate(0px, -16px);
+    }
+}
+
+.decoLine {
+    margin: 20px 0px;
+}

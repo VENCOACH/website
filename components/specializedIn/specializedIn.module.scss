@@ -1,0 +1,75 @@
+@import '../../sass/breakpoints';
+
+.container {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    z-index: -1;
+    margin-bottom: 65px;
+    @include tablet{
+        display: block;
+    }
+    .rightSide {
+        padding-top: 50px;
+        @include laptop-lg {
+            transform: translate(-210px, 10px);
+        }
+        @include laptop-sm {
+            transform: translate(-12px, 10px);
+        }
+        @include mobile {
+        }
+        @include mobile-sm {
+        }
+        .card01 {
+            transform: translate(87px, 26px);
+            @include laptop-lg {
+                transform: translate(62px, 66px);
+                width: 154px;
+            }
+        }
+        .card02 {
+            transform: translate(148px, 111px);
+            @include laptop-lg {
+                transform: translate(86px, 174px);
+                width: 154px;
+            }
+        }
+    }
+}
+
+.leftImage {
+    position: relative;
+    width: 738px;
+    height: 885px;
+    @include laptop-lg {
+        width: 714.17px;
+        height: 856.3px;
+        transform: translate(-207px, 0px);
+    }
+    @include laptop-sm {
+        width: 374px;
+        height: 448.48px;
+        transform: translate(-42px, 0px);
+    }
+    @include tablet {
+        width: 458px;
+        height: 549.14px;
+        transform: translate(44px, 4px);
+    }
+    @include tablet-sm {
+        width: 354px;
+        height: 434.14px;
+        transform: translate(27px, 4px);
+    }
+    @include mobile {
+        width: 300px;
+        height: 341.75px;
+        transform: translate(29px, 4px);
+    }
+    @include mobile-sm {
+        transform: translate(12px, 4px);
+    }
+
+}
+

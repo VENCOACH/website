@@ -1,0 +1,72 @@
+// Cuando se accede a los breakpoints desde los diferentes modulos, debe hacerse de mayor
+// ancho (ultraWideScreen) hacia el menor (cero) , para que funcione, ya que se usa max-width. 
+
+$breakpoints: (
+    "cero": 0,
+    "mobile-sm":350px,
+    "mobile": 430px,
+    "tablet-xsm": 480px,
+    "tablet-sm": 570px,
+    "tablet-md": 620px,
+    "tablet": 770px,
+    "laptop-sm": 990px,
+    "laptop-lg": 1440px,
+    "wideScreen": 1920px,
+    "ultraWideScreen": 2560px 
+);
+
+@mixin cero {
+    @media (max-width: map-get($breakpoints, 'cero'))  {
+        @content
+    }
+};
+@mixin mobile-sm {
+    @media (max-width: map-get($breakpoints, 'mobile-sm'))  {
+        @content
+    }
+};
+@mixin mobile {
+    @media (max-width: map-get($breakpoints, 'mobile'))  {
+        @content
+    }
+};
+@mixin tablet-xsm {
+    @media (max-width: map-get($breakpoints, 'tablet-xsm'))  {
+        @content
+    }
+};
+@mixin tablet-sm {
+    @media (max-width: map-get($breakpoints, 'tablet-sm'))  {
+        @content
+    }
+};
+@mixin tablet-md {
+    @media (max-width: map-get($breakpoints, 'tablet-md'))  {
+        @content
+    }
+};
+@mixin tablet {
+    @media (max-width: map-get($breakpoints, 'tablet'))  {
+        @content
+    }
+};
+@mixin laptop-sm {
+    @media (max-width: map-get($breakpoints, 'laptop-sm'))  {
+        @content
+    }
+};
+@mixin laptop-lg {
+    @media (max-width: map-get($breakpoints, 'laptop-lg'))  {
+        @content
+    }
+};
+@mixin wideScreen {
+    @media (max-width: map-get($breakpoints, 'wideScreen'))  {
+        @content
+    }
+};
+@mixin ultraWideScreen {
+    @media (min-width: map-get($breakpoints, 'ultraWideScreen'))  {
+        @content
+    }
+};

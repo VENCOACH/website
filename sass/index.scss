@@ -1,0 +1,231 @@
+@import "general";
+@import "var";
+@import "breakpoints";
+@import "fonts";
+
+// Global styling
+// Have to be here because, dynamically added classes, can't coexist with module classes, since they have added a prefix. 
+.a-mainSectionLayout {
+    @include mobile {
+        height: 500px !important;
+    }
+}
+
+.b-AboutSectionLayout {
+    @include laptop-sm {
+        height: 768px !important;
+    }
+    @include tablet {
+        height: 1560px !important;
+    }
+    @include tablet-sm {
+        height: 1490px !important;
+    }
+    @include mobile {
+        height: 1406px !important;
+    }
+}
+
+.c-OurServicesSectionLayout {
+    @include laptop-lg {
+        height: 1260px !important;
+    }
+    @include tablet {
+        height: 1326px !important;
+    }
+    @include tablet-sm {
+        height: 701px !important;
+    }
+    @include mobile {
+        height: 625px !important;
+    }
+}
+
+.d-WhyChooseUsSectionLayout {
+    @include laptop-sm {
+        height: 698px !important;
+    }
+    @include tablet {
+        height: 906px !important;
+    }
+    @include tablet-sm {
+        height: 722px !important;
+    }
+    @include mobile {
+        height: 704px !important;
+    }
+}
+
+.f-SpecializedInSectionLayout {
+    margin-top: 60px;
+    @include laptop-lg {
+        height: 856.3px !important;
+    }
+    @include laptop-sm {
+        margin-top: 52px;
+        height: 428px !important;
+    }
+    @include tablet {
+        height: 1012px!important;
+    }
+    @include tablet-sm {
+        height: 905px !important;
+    }
+    @include mobile {
+        height: 760px !important;
+    }
+}
+
+.e-TeamMembers {
+    margin-top: 144px;
+    @include laptop-lg {
+        height: 790px;
+        margin-top: 144px;
+    }
+    @include laptop-sm {
+        height: 659px !important;
+    }
+    @include tablet {
+        height:625px  !important ;
+        margin-top: 100px !important; 
+    }
+    @include mobile {
+        height: 580px !important;
+    }
+    @include mobile-sm {
+        margin-bottom: 35px !important;
+    }
+}
+
+.g-testimonials {
+    margin-top: 100px;
+    height: 650px !important;
+    @include laptop-lg {
+        height: 744px !important;
+    }
+    @include tablet-sm {
+        height: 500px !important;
+    }
+    @include mobile {
+        height: 435px !important;
+    }
+}
+
+#programa_desarrollo {
+    height: 1500px !important;
+    @include laptop-lg {
+        height: 1650px !important;
+    }
+    @include tablet {
+        height: 1900px !important;
+    }
+}
+
+
+// InfoBlock sections overrides
+
+.infoBlock-container_aboutUs {
+    margin-bottom: 74px;
+    @include tablet {
+        margin-bottom: 78px;
+    }
+}
+
+.infoBlock-paragraphs_aboutUs {
+    @include tablet {
+        max-width: 358px;
+    }
+    @include tablet-sm {
+        p {
+            max-width: 394px;
+        }
+    }
+    @include mobile {
+        p {
+            max-width:  316px;
+        }
+    }
+    @include laptop-sm {
+        max-width: 441px;
+    }
+}
+
+.infoBlock-paragraphs_WhyChooseUs {
+    @include tablet {
+        margin-right: 39px;
+    }
+    @include tablet-sm {
+        margin-right: 159px;
+    }
+    @include mobile {
+        margin-right: 221px;
+    }
+    p {
+        font-size: 14px !important;
+        @include tablet-sm {
+            font-size: 13px !important;
+        }
+    }
+}
+
+.infoBlock-container_SpecializedIn {
+    margin-left: 45px;
+    @include laptop-lg {
+        width: 342px !important;
+    }
+    @include tablet {
+        width: 98% !important;
+    }
+    @include tablet-sm {
+        width: 77% !important;
+    }
+}
+
+.infoBlock-container_teamMembers {
+    height: 93px !important;
+    @include mobile {
+        height: 55px !important;
+    }
+}
+
+.infoBlock-title_teamMembers {
+    @include mobile {
+        margin: 0px;
+    }
+}
+
+.infoBlock-container_testimonials {
+    margin-top: 20px !important;
+    height: 120px !important;
+    @include mobile {
+        margin-left: 40px;
+    }
+}
+
+.infoBlock-container_ServiceDetails {
+    width: 100% !important;
+    margin-top: 80px;
+    height: 140px !important;
+    @include tablet-sm {
+        margin-left: 10px;
+    }
+}
+
+.infoBlock-title_ServiceDetails {
+    max-width: 100% !important;
+}
+
+////////////
+
+
+.slick-dots {
+    bottom:18px !important;
+    @include laptop-sm {
+        bottom:0px !important;
+    }
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center !important;
+}
