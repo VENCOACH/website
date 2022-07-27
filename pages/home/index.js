@@ -7,7 +7,7 @@ import BannerNumbers from '../../components/bannerNumbers';
 
 export default function Home({rawContent}) {
 
-  const { container } = styles
+  const { container, universityBanner } = styles
 
   const [orderContent, setOrderContent] = useState([]);
 
@@ -17,7 +17,6 @@ export default function Home({rawContent}) {
   
   return (
     <div className={container}>
-      
       <Head>
         <title>Vencoach</title>
         <meta name="Vencoach" content="Coaching profesional" />
@@ -25,9 +24,15 @@ export default function Home({rawContent}) {
       </Head>
       {/* <BannerNumbers /> */}
       {orderContent && orderContent.map((each)=>{
+        if (each.sys.contentType.sys.id === 'servicesTemplate') {return};
         return <Section key={each.fields.entryTitle} sectionData={each}/>
       })}
-
+      <div className={universityBanner}>
+        <a href="https://saberes.university/aval-academico/" target="_blank" rel='noreferrer'>
+          <img src='img/logo-saberes-university.png' alt='saberes-university'></img>
+          <h2>Acreditados con el aval académico de Saberes University</h2>
+        </a>
+      </div>
     </div>
   )
 }

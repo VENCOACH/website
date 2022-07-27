@@ -1,0 +1,106 @@
+@import '../../sass/var';
+@import '../../sass/breakpoints';
+
+.contentBox {
+    position: relative;
+    width: 90vw;
+    max-width: 1300px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    @include laptop-lg {
+        max-width: 960px
+    }
+    @include laptop-sm {
+        max-width: 720px
+    }
+    @include tablet {
+        max-width: 560px
+    }
+    @include tablet-sm {
+        max-width: 430px
+    }
+    @include mobile {
+        width: 100vw
+    }
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    z-index: -1;
+    margin-bottom: 65px;
+    @include tablet {
+        display: block;
+    }
+    .leftSide {
+        padding-top: 50px;
+        @include mobile {
+            margin: 35px;
+        }
+        @include mobile-sm {
+            margin: 17px;
+        }
+        .circleDiagram {
+            transform: translate(136px, 88px);
+            @include laptop-lg {
+                transform: translate(59px, 116px);
+                width: 233px;
+            }
+            @include laptop-sm {
+                transform: translate(37px, 48px);
+                width: 178px;
+            }
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+}
+
+.rightImage {
+    position: relative;
+    width: 681px;
+    height: 566px;
+    transform: translate(595px, -276px);
+    @include laptop-lg {
+        width: 574px;
+        height: 485px;
+        transform: translate(388px, -177px);
+    }
+    // @include laptop-sm {
+    //     width: 426.62px;
+    //     height: 695.4px;
+    //     transform: translate(-215px, -36px);
+    // }
+    // @include tablet {
+    //     transform: translate(-215px, 4px);
+    // }
+    // @include mobile-sm {
+    //     transform: translate(-215px, 175px);
+    // }
+
+    .imageSmallScreens {
+        width: 1045px;
+        height: 690px;
+        transform: translate(214px, -78px);
+        @include tablet {
+            transform: translate(214px, 18px);
+        }
+        @include tablet-sm {
+            width: 393px;
+            height: 276.5px;
+            transform: translate(217px, 8px);
+        }
+        @include mobile {
+            width: 333px;
+            height: 234px;
+            transform: translate(240px, -6px);
+        }
+        @include mobile-sm {
+            transform: translate(214px, -151px);
+        }
+    }
+}
