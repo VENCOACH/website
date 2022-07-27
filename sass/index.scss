@@ -111,6 +111,16 @@
     }
 }
 
+#programa_desarrollo {
+    height: 1500px !important;
+    @include laptop-lg {
+        height: 1650px !important;
+    }
+    @include tablet {
+        height: 1900px !important;
+    }
+}
+
 
 // InfoBlock sections overrides
 
@@ -190,6 +200,19 @@
     @include mobile {
         margin-left: 40px;
     }
+}
+
+.infoBlock-container_ServiceDetails {
+    width: 100% !important;
+    margin-top: 80px;
+    height: 140px !important;
+    @include tablet-sm {
+        margin-left: 10px;
+    }
+}
+
+.infoBlock-title_ServiceDetails {
+    max-width: 100% !important;
 }
 
 ////////////
