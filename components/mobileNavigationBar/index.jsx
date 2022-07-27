@@ -177,6 +177,11 @@ export default function MobileNavigationBar() {
                 {links[5].linkTitle}
             </Scroll>
           </li>
+          <li>
+              <a target={"_blank"} href={`https://api.whatsapp.com/send?phone=584246265463&text=Hola!%20Quisiera%20informacion%20de%20sus%20certificaciones`} rel={"noreferrer"}>
+                  Contactar
+              </a>
+            </li>
           </>
           :
           <>
@@ -221,6 +226,11 @@ export default function MobileNavigationBar() {
                   {links[5].linkTitle}
                 </a>
                </Link>
+            </li>
+            <li>
+              <a target={"_blank"} href={`https://api.whatsapp.com/send?phone=584246265463&text=Hola!%20Quisiera%20informacion%20de%20sus%20certificaciones`} rel={"noreferrer"}>
+                  Contactar
+              </a>
             </li>
           </>
         }

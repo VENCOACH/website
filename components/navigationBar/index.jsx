@@ -153,7 +153,11 @@ export default function NavigationBar({data}) {
               </li> 
             ))}
           </ul>
-          <button>Contactar</button>
+            <a target={"_blank"} href={`https://api.whatsapp.com/send?phone=584246265463&text=Hola!%20Quisiera%20informacion%20de%20sus%20certificaciones`} rel={"noreferrer"}>
+              <button>
+                Contactar
+              </button>
+            </a>
         </div>
       </section>
     </nav>
