@@ -114,7 +114,7 @@ export default function NavigationBar({data}) {
           <div className={rightSide}>
             <div className={phone}>
               <img src="img/icon-phone.png" alt="" />
-              <p>...</p>
+              <p>+58 424-6265463</p>
             </div>
             <div className={email}>
               <img src="img/icon-email.png" alt="" />
