@@ -125,9 +125,9 @@
 // InfoBlock sections overrides
 
 .infoBlock-container_aboutUs {
-    margin-bottom: 74px;
+    margin-bottom: 74px !important;
     @include tablet {
-        margin-bottom: 78px;
+        margin-bottom: 78px !important;
     }
 }
 
@@ -142,7 +142,12 @@
     }
     @include mobile {
         p {
-            max-width:  316px;
+            max-width:  312px !important;
+        }
+    }
+    @include mobile-sm {
+        p{
+            max-width: 290px !important;
         }
     }
     @include laptop-sm {
