@@ -129,6 +129,9 @@
     @include tablet {
         margin-bottom: 78px !important;
     }
+    @include laptop-lg {
+        margin-bottom: 99px !important;
+    }
 }
 
 .infoBlock-paragraphs_aboutUs {
